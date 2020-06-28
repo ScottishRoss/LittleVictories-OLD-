@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LittleVictories.ViewVictory"
+             Title="Your Victories">
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="#F172A1" />
+            <Setter Property="TextColor" Value="#F0EBF4" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="{StaticResource PageMargin}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+            <Label Text="{Binding Text}" LineBreakMode="WordWrap" LineHeight="1.5" FontSize="Large"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button Text="Remove"
+                     Clicked="OnDeleteButtonClicked" 
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
