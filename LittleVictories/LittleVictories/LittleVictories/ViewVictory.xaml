@@ -14,7 +14,7 @@
                ApplyToDerivedTypes="True"
                CanCascade="True">
             <Setter Property="FontSize" Value="Medium" />
-            <Setter Property="BackgroundColor" Value="#F172A1" />
+            <Setter Property="BackgroundColor" Value="#ff6b6b" />
             <Setter Property="TextColor" Value="#F0EBF4" />
             <Setter Property="CornerRadius" Value="5" />
         </Style>

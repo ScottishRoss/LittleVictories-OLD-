@@ -482,3 +482,13 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\android\assets\System.Buffers.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\android\assets\System.Memory.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\layout\main.xml
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\drawable\splash_screen.xml
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\drawable\splash_logo.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\mipmap-hdpi\ic_launcher.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\mipmap-mdpi\ic_launcher.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\mipmap-xhdpi\ic_launcher.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\mipmap-xxhdpi\ic_launcher.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\mipmap-xxxhdpi\ic_launcher.png
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\res\values\strings.xml
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.Android\obj\Debug\90\android\src\crc64a15ab100566639af\SplashActivity.java
