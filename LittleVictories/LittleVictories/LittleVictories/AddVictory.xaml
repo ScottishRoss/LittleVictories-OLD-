@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviors="clr-namespace:LittleVictories.Behaviors"
+             x:Class="LittleVictories.AddVictory"
+             Title="Celebrate a Victory!">
+    <ContentPage.Resources>
+        <!--<Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>-->
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="#69dc9e" />
+            <Setter Property="TextColor" Value="#F0EBF4" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+
+
+    </ContentPage.Resources>
+    <StackLayout Margin="{StaticResource PageMargin}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="Start">
+            <Editor 
+                Text="{Binding Text}"
+                IsSpellCheckEnabled="True"
+                IsTextPredictionEnabled="True"
+                MaxLength="140"
+                Keyboard="Chat"/>
+            <Label
+                Style="{StaticResource AppBackgroundColorLight}"
+                Text="{Binding Text.Length, 
+                Source={x:Reference TitleEntry}, 
+                Mode=TwoWay, 
+                Converter={x:StaticResource TextLengthValidationConverter}}"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button Text="Save"
+                     Clicked="OnSaveButtonClicked" 
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        <StackLayout>
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
