@@ -7,7 +7,8 @@
         <!-- Implicit styles -->
         <Style TargetType="{x:Type ListView}">
             <Setter Property="BackgroundColor"
-                    Value="{StaticResource AppBackgroundColor}" />
+                    Value="GhostWhite" />
+
         </Style>
     </ContentPage.Resources>
 
@@ -16,6 +17,34 @@
                      Clicked="OnVictoryAddedClicked" />
     </ContentPage.ToolbarItems>
 
+    <ListView x:Name="victoryView" ItemSelected="OnVictoryViewItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+
+                    <Frame Padding="0,0,0,3">
+                        <Frame.Content>
+                            <Frame Padding="15,15,15,15"   BorderColor="Gray" BackgroundColor="White">
+                                <Frame.Content>
+                                    <StackLayout Padding="20,0,0,0"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding Name}"
+                                               FontFamily="OpenSans-Light"
+                                               FontSize="9"
+                                               TextColor="#69add1"/>
+                                    </StackLayout>
+
+                                </Frame.Content>
+
+                            </Frame>
+                        </Frame.Content>
+
+                    </Frame>
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+<!--
     <ListView x:Name="victoryView"
               VerticalOptions="CenterAndExpand" 
               HorizontalOptions="FillAndExpand"
@@ -23,9 +52,11 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Text}"
-                          Detail="{Binding Date}" />
+                          Detail="{Binding Date}" 
+                          TextColor="{StaticResource MainFontDark}"
+                          DetailColor="{StaticResource MainFont}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+-->
 </ContentPage>

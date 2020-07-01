@@ -9,6 +9,15 @@
                     Value="{StaticResource AppBackgroundColor}" />
         </Style>-->
 
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="#69dc9e" />
+            <Setter Property="TextColor" Value="#F0EBF4" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+
 
     </ContentPage.Resources>
     <StackLayout Margin="{StaticResource PageMargin}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
@@ -20,8 +29,11 @@
                 MaxLength="140"
                 Keyboard="Chat"/>
             <Label
-                Style="{StaticResource LegendLabelStyle}"
-                Text="{Binding Text.Length, Source={x:Reference TitleEntry}, Mode=TwoWay, Converter={x:StaticResource TextLengthValidationConverter}}"/>
+                Style="{StaticResource AppBackgroundColorLight}"
+                Text="{Binding Text.Length, 
+                Source={x:Reference TitleEntry}, 
+                Mode=TwoWay, 
+                Converter={x:StaticResource TextLengthValidationConverter}}"/>
         </StackLayout>
         <StackLayout VerticalOptions="CenterAndExpand">
             <Button Text="Save"

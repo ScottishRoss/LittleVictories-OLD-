@@ -7,9 +7,12 @@
         <Thickness x:Key="PageMargin">20</Thickness>
 
         <!-- Colors -->
-        <Color x:Key="AppBackgroundColor">#F0EBF4</Color>
-        <Color x:Key="NavigationBarColor">#E64398</Color>
+        <Color x:Key="AppBackgroundColor">#85e4fe</Color>
+        <Color x:Key="AppBackgroundColorLight">GhostWhite</Color>
+        <Color x:Key="NavigationBarColor">#2b59c3</Color>
         <Color x:Key="NavigationBarTextColor">#F0EBF4</Color>
+        <Color x:Key="MainFont">#85e4fe</Color>
+        <Color x:Key="MainFontDark">#2b59c3</Color>
 
         <!-- Implicit styles -->
         <Style TargetType="{x:Type NavigationPage}">
@@ -25,13 +28,5 @@
                     Value="{StaticResource AppBackgroundColor}" />
         </Style>
 
-        <Style TargetType="{x:Type Button}"
-               ApplyToDerivedTypes="True"
-               CanCascade="True">
-            <Setter Property="FontSize" Value="Medium" />
-            <Setter Property="BackgroundColor" Value="#F172A1" />
-            <Setter Property="TextColor" Value="#F0EBF4" />
-            <Setter Property="CornerRadius" Value="5" />
-        </Style>
     </Application.Resources>
 </Application>
