@@ -1,37 +1,98 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LittleVictories.ViewVictory"
-             Title="Your Victories">
-    <ContentPage.Resources>
-        <!-- Implicit styles -->
-        <Style TargetType="{x:Type Editor}">
-            <Setter Property="BackgroundColor"
-                    Value="{StaticResource AppBackgroundColor}" />
-        </Style>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    x:Class="LittleVictories.ViewVictory"
+    Title="Celebrate a Victory"
+    ControlTemplate="{StaticResource PageWithGradient}">
 
-        <Style TargetType="Button"
-               ApplyToDerivedTypes="True"
-               CanCascade="True">
-            <Setter Property="FontSize" Value="Medium" />
-            <Setter Property="BackgroundColor" Value="#ff6b6b" />
-            <Setter Property="TextColor" Value="#F0EBF4" />
-            <Setter Property="CornerRadius" Value="5" />
-        </Style>
-    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-    <StackLayout Margin="{StaticResource PageMargin}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-            <Label Text="{Binding Text}" LineBreakMode="WordWrap" LineHeight="1.5" FontSize="Large"/>
-        </StackLayout>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            <Button Text="Remove"
-                     Clicked="OnDeleteButtonClicked" 
-                     HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" VerticalOptions="End">
-            
-        </StackLayout>
-    </StackLayout>
+            <TableView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                       Intent="Form" HasUnevenRows="true">
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Title"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Label Text ="{Binding Title}"
+                                   FontSize="Large"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
 
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Type"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Label Text ="{Binding Quick}"
+                                   FontSize="Large"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Details"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Label Text ="{Binding Details}"
+                                   FontSize="Large"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Date"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Label Text ="{Binding Date}"
+                                   FontSize="Large"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableView>
+
+            <Button Text="Delete Victory" 
+                    Grid.Row="1" 
+                    HeightRequest="75"
+                    Grid.ColumnSpan="2" 
+                    x:Name="saveButton" 
+                    BackgroundColor="#8759D7" 
+                    TextColor="White" 
+                    Clicked="OnDeleteButtonClicked"
+                    FontSize="Large"
+                    FontFamily="{StaticResource MontSerrat}"/>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

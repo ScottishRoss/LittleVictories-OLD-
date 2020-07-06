@@ -1,32 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:magicGradients="clr-namespace:MagicGradients;assembly=MagicGradients"
+             mc:Ignorable="d"
              x:Class="LittleVictories.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BlackJack">
+                <On Platform="Android" Value="blackjack-webfont.ttf#BlackJack" />
+                <On Platform="UWP" Value="/Assets/blackjack-webfont.ttf" />
+                <On Platform="iOS" Value="BlackJack" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="MontSerrat">
+                <On Platform="Android" Value="Montserrat-Regular.ttf#MontSerrat" />
+                <On Platform="UWP" Value="/Assets/Montserrat-Regular.ttf" />
+                <On Platform="iOS" Value="Montserrat" />
+            </OnPlatform>
+            <OnPlatform x:Key="LittleVictoriesFont" x:TypeArguments="x:String">
+                <On Platform="Android" Value="littlevictories.ttf#fontello" />
+                <On Platform="iOS" Value="LittleVictories" />
+            </OnPlatform>
+        </ResourceDictionary>
 
-        <Thickness x:Key="PageMargin">20</Thickness>
-
-        <!-- Colors -->
-        <Color x:Key="AppBackgroundColor">#85e4fe</Color>
-        <Color x:Key="AppBackgroundColorLight">GhostWhite</Color>
-        <Color x:Key="NavigationBarColor">#2b59c3</Color>
-        <Color x:Key="NavigationBarTextColor">#F0EBF4</Color>
-        <Color x:Key="MainFont">#85e4fe</Color>
-        <Color x:Key="MainFontDark">#2b59c3</Color>
-
-        <!-- Implicit styles -->
-        <Style TargetType="{x:Type NavigationPage}">
-            <Setter Property="BarBackgroundColor"
-                    Value="{StaticResource NavigationBarColor}" />
-            <Setter Property="BarTextColor"
-                    Value="{StaticResource NavigationBarTextColor}" />
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="PlaceholderColor" Value="White"/>
+        </Style>
+        <Style TargetType="Editor">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="PlaceholderColor" Value="White"/>
+            <Setter Property="FontSize" Value="Subtitle"/>
         </Style>
 
-        <Style TargetType="{x:Type ContentPage}"
-               ApplyToDerivedTypes="True">
-            <Setter Property="BackgroundColor"
-                    Value="{StaticResource AppBackgroundColor}" />
+        <Style x:Key="Icons" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource LittleVictoriesFont}" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="WidthRequest" Value="40" />
         </Style>
 
+        <Style x:Key="TrophyIcon" BasedOn="{StaticResource Icons}" TargetType="Label">
+            <Setter Property="Text" Value="&#xe800;" />
+        </Style>
+
+
+        <ControlTemplate x:Key="PageWithGradient">
+    <Grid>
+        <magicGradients:GradientView VerticalOptions="FillAndExpand" >
+            <magicGradients:GradientView.GradientSource>
+                <magicGradients:CssGradientSource>
+                    <x:String>
+                        <![CDATA[
+                                    radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(133,228,254),rgb(135, 89, 215))
+                                ]]>
+                    </x:String>
+                </magicGradients:CssGradientSource>
+            </magicGradients:GradientView.GradientSource>
+        </magicGradients:GradientView>
+        <ContentPresenter />
+    </Grid>
+</ControlTemplate>
+<Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+    <Setter Property="ControlTemplate">
+        <Setter.Value>
+            <ControlTemplate>
+                <Grid>
+                    <magicGradients:GradientView VerticalOptions="FillAndExpand" >
+                        <magicGradients:GradientView.GradientSource>
+                            <magicGradients:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
+                                    radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(34, 222, 237),rgb(135, 89, 215))
+                                    ]]>
+                                </x:String>
+                            </magicGradients:CssGradientSource>
+                        </magicGradients:GradientView.GradientSource>
+                    </magicGradients:GradientView>
+                    <ContentPresenter />
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
     </Application.Resources>
+
+    
 </Application>

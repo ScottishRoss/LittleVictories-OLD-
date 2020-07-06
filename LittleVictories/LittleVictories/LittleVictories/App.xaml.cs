@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using Xamarin.Forms;
 using LittleVictories.Data;
+using LittleVictories.Models;
+using Xamarin.Forms;
 
 namespace LittleVictories
 {
@@ -15,10 +17,13 @@ namespace LittleVictories
             {
                 if (database == null)
                 {
-                    database = new LittleVictoriesDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
+                    database = new LittleVictoriesDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "LittleVictories.db3"));
                 }
                 return database;
             }
+        }
+        public class ExportFont
+        {
         }
 
         public App()

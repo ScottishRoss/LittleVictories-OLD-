@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,8 +11,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\blackjack-webfont.ttf" />
+    <None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-ExtraBold.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Resources\Fonts\Montserrat-ThinItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\blackjack-webfont.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Montserrat-ExtraBold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Montserrat-ThinItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicGradients" Version="1.1.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
 

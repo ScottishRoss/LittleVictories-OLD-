@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Xamarin.Forms;
 using LittleVictories.Models;
+
+[assembly: ExportFont("blackjack-webfont.ttf", Alias = "BlackJack")]
 
 namespace LittleVictories
 {
@@ -13,31 +13,36 @@ namespace LittleVictories
         {
             InitializeComponent();
         }
-
+        public class ExportFont
+        {
+        }
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            victoryView.ItemsSource = await App.Database.GetVictoriesAsync();
+            VictoryListView.ItemsSource = await App.Database.GetVictoriesAsync();
         }
 
-        async void OnVictoryAddedClicked(object sender, EventArgs e)
+        async void OnVictoryAddClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddVictory
+            await Navigation.PushAsync(new AddVictory()
             {
-                BindingContext = new Victory()
+                BindingContext = new TheVictory()
             });
+
+
         }
 
-        async void OnVictoryViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new ViewVictory
+                await Navigation.PushAsync(new ViewVictory()
                 {
-                    BindingContext = e.SelectedItem as Victory
+                    BindingContext = e.SelectedItem as TheVictory
                 });
             }
         }
+        
     }
 }

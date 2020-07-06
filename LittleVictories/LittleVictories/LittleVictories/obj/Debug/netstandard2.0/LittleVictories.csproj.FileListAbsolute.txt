@@ -10,7 +10,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\ref\LittleVictories.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\YourVictories.xaml.g.cs
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\ViewVictory.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csproj.CoreCompileInputs.cache
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\ViewVictory.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csprojAssemblyReference.cache

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
 using LittleVictories.Models;
@@ -12,24 +13,24 @@ namespace LittleVictories.Data
         public LittleVictoriesDatabase(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
-            _database.CreateTableAsync<Victory>().Wait();
+            _database.CreateTableAsync<TheVictory>().Wait();
         }
 
-        public Task<List<Victory>> GetVictoriesAsync()
+        public Task<List<TheVictory>> GetVictoriesAsync()
         {
-            return _database.Table<Victory>().ToListAsync();
+            return _database.Table<TheVictory>().OrderByDescending(x => x.Date).ToListAsync();
         }
 
-        public Task<Victory> GetVictoryAsync(int id)
+        public Task<TheVictory> GetVictoryAsync(int ID)
         {
-            return _database.Table<Victory>()
-                            .Where(i => i.ID == id)
+            return _database.Table<TheVictory>()
+                            .Where(i => i.Id == ID)
                             .FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveVictoryAsync(Victory victory)
+        public Task<int> SaveVictoryAsync(TheVictory victory)
         {
-            if (victory.ID != 0)
+            if (victory.Id != 0)
             {
                 return _database.UpdateAsync(victory);
             }
@@ -39,7 +40,7 @@ namespace LittleVictories.Data
             }
         }
 
-        public Task<int> DeleteVictoryAsync(Victory victory)
+        public Task<int> DeleteVictoryAsync(TheVictory victory)
         {
             return _database.DeleteAsync(victory);
         }
