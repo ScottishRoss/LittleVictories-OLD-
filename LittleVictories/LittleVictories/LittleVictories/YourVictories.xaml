@@ -1,62 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              x:Class="LittleVictories.YourVictories"
-             Title="Little Victories">
-    <ContentPage.Resources>
-        <!-- Implicit styles -->
-        <Style TargetType="{x:Type ListView}">
-            <Setter Property="BackgroundColor"
-                    Value="GhostWhite" />
+             ios:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="False"
+             ControlTemplate="{StaticResource PageWithGradient}">
+    <ContentPage.Content>
 
-        </Style>
-    </ContentPage.Resources>
+        <StackLayout>
+            <Label Text="Little Victories" 
+                   x:Name="Trophy"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="WhiteSmoke"
+                   FontAttributes="Bold"
+                   FontFamily="{StaticResource BlackJack}"
+                   FontSize="Header" 
+                   Margin="20, 40" />
+            <ListView x:Name="VictoryListView"
+                      ItemSelected="OnListViewItemSelected"
+                      Margin="20,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Title}"
+                                                  FontFamily="{StaticResource MontSerrat}"
+                                                  FontSize="Medium"
+                                                  FontAttributes="Bold"></Span>
+                                            <Span Text=" - "></Span>
+                                            <Span Text="{Binding Date}"
+                                                  FontFamily="{StaticResource MontSerrat}"
+                                                  FontSize="Small"
+                                                  FontAttributes="Italic"></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Celebrate a Victory!"
+                    x:Name="addButton" 
+                    BackgroundColor="#8759D7" 
+                    TextColor="White" 
+                    Clicked="OnVictoryAddClicked" 
+                    HeightRequest="75"
+                    FontSize="Large"
+                    FontFamily="{StaticResource MontSerrat}"/>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+"
-                     Clicked="OnVictoryAddedClicked" />
-    </ContentPage.ToolbarItems>
-
-    <ListView x:Name="victoryView" ItemSelected="OnVictoryViewItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-
-                    <Frame Padding="0,0,0,3">
-                        <Frame.Content>
-                            <Frame Padding="15,15,15,15"   BorderColor="Gray" BackgroundColor="White">
-                                <Frame.Content>
-                                    <StackLayout Padding="20,0,0,0"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                        <Label Text="{Binding Name}"
-                                               FontFamily="OpenSans-Light"
-                                               FontSize="9"
-                                               TextColor="#69add1"/>
-                                    </StackLayout>
-
-                                </Frame.Content>
-
-                            </Frame>
-                        </Frame.Content>
-
-                    </Frame>
-
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-<!--
-    <ListView x:Name="victoryView"
-              VerticalOptions="CenterAndExpand" 
-              HorizontalOptions="FillAndExpand"
-              ItemSelected="OnVictoryViewItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Text}"
-                          Detail="{Binding Date}" 
-                          TextColor="{StaticResource MainFontDark}"
-                          DetailColor="{StaticResource MainFont}" />
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
--->
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

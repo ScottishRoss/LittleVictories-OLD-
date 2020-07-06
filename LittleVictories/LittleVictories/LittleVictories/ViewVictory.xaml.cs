@@ -1,26 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LittleVictories.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace LittleVictories
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ViewVictory : ContentPage
     {
+        TheVictory Victory { get; set; }
+
         public ViewVictory()
         {
             InitializeComponent();
         }
+
+        async void OnEditButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddVictory()
+            {
+                BindingContext = new TheVictory()
+            });
+        }
+
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var victory = (Victory)BindingContext;
-            await App.Database.DeleteVictoryAsync(victory);
-            await Navigation.PopAsync();
+            bool answer = await DisplayAlert(
+                    "Delete Confirmation", 
+                    "Are you sure you want to delete your Victory?", 
+                    "Yes", 
+                    "No"
+                );
+
+            if (answer)
+            {
+                var victory = (TheVictory)BindingContext;
+
+                await App.Database.DeleteVictoryAsync(victory);
+                await Navigation.PopAsync();
+            };
         }
     }
 }
