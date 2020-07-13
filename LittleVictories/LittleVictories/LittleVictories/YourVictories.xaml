@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              x:Class="LittleVictories.YourVictories"
@@ -9,21 +8,25 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <Label Text="Little Victories" 
-                   x:Name="Trophy"
-                   HorizontalTextAlignment="Center" 
-                   TextColor="WhiteSmoke"
-                   FontAttributes="Bold"
-                   FontFamily="{StaticResource BlackJack}"
-                   FontSize="Header" 
-                   Margin="20, 40" />
+            <Image Source="LV_Img"
+                   Margin="0,70"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="EmptyMessage"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="StartAndExpand"
+                   FontFamily="{StaticResource MontSerrat}"
+                   FontSize="Large"
+                   Margin="20, 0"
+                   HorizontalTextAlignment="Center">Celebrate a Victory and see them all here!</Label>
             <ListView x:Name="VictoryListView"
                       ItemSelected="OnListViewItemSelected"
                       Margin="20,0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical" 
+                                         HorizontalOptions="FillAndExpand">
                                 <Label>
                                     <Label.FormattedText>
                                         <FormattedString>
@@ -51,7 +54,8 @@
                     Clicked="OnVictoryAddClicked" 
                     HeightRequest="75"
                     FontSize="Large"
-                    FontFamily="{StaticResource MontSerrat}"/>
+                    FontFamily="{StaticResource MontSerrat}"
+                    VerticalOptions="EndAndExpand"/>
 
         </StackLayout>
     </ContentPage.Content>

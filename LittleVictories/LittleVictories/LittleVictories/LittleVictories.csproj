@@ -11,19 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Fonts\blackjack-webfont.ttf" />
-    <None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
-    <None Remove="Resources\Fonts\Montserrat-ExtraBold.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
-    <None Remove="Resources\Fonts\Montserrat-ThinItalic.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Fonts\blackjack-webfont.ttf" />
-    <EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
-    <EmbeddedResource Include="Resources\Fonts\Montserrat-ExtraBold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
-    <EmbeddedResource Include="Resources\Fonts\Montserrat-ThinItalic.ttf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +23,7 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="XForms.Plugin.AnimationNavigationPage" Version="1.0.8" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +34,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="AddVictory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SplashPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewVictory.xaml">
@@ -55,5 +51,9 @@
     <None Update="YourVictories.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validations\" />
   </ItemGroup>
 </Project>

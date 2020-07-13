@@ -6,8 +6,10 @@ using Android.Support.V7.App;
 using Android.Util;
 
 namespace LittleVictories.Droid
+
+
 {
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + nameof(SplashActivity);
