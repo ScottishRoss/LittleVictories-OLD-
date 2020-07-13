@@ -3,8 +3,15 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "LittleVictories.Android.dll" comes first in this list. */
 		"LittleVictories.Android.dll",
+		"FormsControls.Base.dll",
+		"FormsControls.Droid.dll",
 		"FormsViewGroup.dll",
 		"LittleVictories.dll",
+		"MagicGradients.dll",
+		"PropertyChanged2.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

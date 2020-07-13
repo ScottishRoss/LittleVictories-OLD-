@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using Xamarin.Forms;
 using LittleVictories.Data;
+using Xamarin.Forms;
 
 namespace LittleVictories
 {
@@ -13,18 +13,16 @@ namespace LittleVictories
         {
             get
             {
-                if (database == null)
-                {
-                    database = new LittleVictoriesDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
-                }
-                return database;
+                return database ?? (database = new LittleVictoriesDatabase(Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "LittleVictories.db3")));
             }
         }
-
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new YourVictories());
+            var splashPage = new NavigationPage(new SplashPage());
+            MainPage = splashPage;
         }
 
         protected override void OnStart()

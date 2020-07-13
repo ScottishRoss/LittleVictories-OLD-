@@ -1,47 +1,109 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviors="clr-namespace:LittleVictories.Behaviors"
-             x:Class="LittleVictories.AddVictory"
-             Title="Celebrate a Victory!">
-    <ContentPage.Resources>
-        <!--<Style TargetType="{x:Type Editor}">
-            <Setter Property="BackgroundColor"
-                    Value="{StaticResource AppBackgroundColor}" />
-        </Style>-->
+﻿<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    x:Class="LittleVictories.AddVictory"
+    Title="Celebrate a Victory"
+    NavigationPage.HasNavigationBar="False"
+    ControlTemplate="{StaticResource PageWithGradient}">
 
-        <Style TargetType="Button"
-               ApplyToDerivedTypes="True"
-               CanCascade="True">
-            <Setter Property="FontSize" Value="Medium" />
-            <Setter Property="BackgroundColor" Value="#69dc9e" />
-            <Setter Property="TextColor" Value="#F0EBF4" />
-            <Setter Property="CornerRadius" Value="5" />
-        </Style>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
+            <TableView Grid.Row="0" Grid.Column="0" 
+                       Grid.ColumnSpan="2" 
+                       Intent="Form" 
+                       HasUnevenRows="true"
+                       Margin="10,40">
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Title"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                                <Editor x:Name="title" 
+                                    VerticalOptions="FillAndExpand"
+                                    HeightRequest="50"
+                                    Placeholder="Give your Victory a title."
+                                    FontFamily="{StaticResource MontSerrat}"/>
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
 
-    </ContentPage.Resources>
-    <StackLayout Margin="{StaticResource PageMargin}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout VerticalOptions="Start">
-            <Editor 
-                Text="{Binding Text}"
-                IsSpellCheckEnabled="True"
-                IsTextPredictionEnabled="True"
-                MaxLength="140"
-                Keyboard="Chat"/>
-            <Label
-                Style="{StaticResource AppBackgroundColorLight}"
-                Text="{Binding Text.Length, 
-                Source={x:Reference TitleEntry}, 
-                Mode=TwoWay, 
-                Converter={x:StaticResource TextLengthValidationConverter}}"/>
-        </StackLayout>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            <Button Text="Save"
-                     Clicked="OnSaveButtonClicked" 
-                     HorizontalOptions="FillAndExpand" />
-        </StackLayout>
-        <StackLayout>
-            
-        </StackLayout>
-    </StackLayout>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Choose a Victory"
+                                   FontSize="Subtitle"
+                                   FontAttributes="Bold"
+                                   TextColor="#8759D7"
+                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Picker x:Name="quick" 
+                                    Title="- Select -"
+                                    TitleColor="White"
+                                    HorizontalOptions="FillAndExpand"
+                                    TextColor="#8759D7"
+                                    FontFamily="{StaticResource MontSerrat}">
+                                <Picker.Items>
+                                    <x:String>Took a shower</x:String>
+                                    <x:String>Paid a bill</x:String>
+                                    <x:String>Went for a walk</x:String>
+                                    <x:String>Ate a meal</x:String>
+                                    <x:String>Socialized</x:String>
+                                    <x:String>Enjoyed a hobby</x:String>
+                                    <x:String>Exercised</x:String>
+                                    <x:String>Did some housework</x:String>
+                                    <x:String>Smiled/Laughed</x:String>
+                                    <x:String>Other (Enter details below)</x:String>
+                                </Picker.Items>
+                            </Picker>
+
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+
+                <TableSection>
+                <ViewCell>
+                    <StackLayout Padding="15">
+                        <Label Text="Victory Details"
+                               FontSize="Subtitle"
+                               FontAttributes="Bold"
+                               TextColor="#8759D7"
+                               FontFamily="{StaticResource MontSerrat}"/>
+                        <Editor x:Name="details" 
+                                VerticalOptions="FillAndExpand"
+                                HeightRequest="200"
+                                AutoSize="TextChanges"
+                                Placeholder="Any details about your Victory?"
+                                MaxLength="140"
+                                FontFamily="{StaticResource MontSerrat}"/>
+                        </StackLayout>
+                </ViewCell>
+            </TableSection>
+            </TableView>
+
+            <Button Text="Save your Victory" 
+                    Grid.Row="1" 
+                    HeightRequest="75"
+                    Grid.ColumnSpan="2" 
+                    x:Name="saveButton" 
+                    BackgroundColor="#8759D7" 
+                    FontSize="Large"
+                    FontFamily="{StaticResource MontSerrat}"
+                    TextColor="White" 
+                    Clicked="OnSaveButtonClicked"/>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

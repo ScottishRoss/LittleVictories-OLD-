@@ -1,14 +1,11 @@
 ﻿using System;
-using LittleVictories.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using LittleVictories.Models;
 
 namespace LittleVictories
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddVictory : ContentPage
     {
-
         public AddVictory()
         {
             InitializeComponent();
@@ -16,10 +13,18 @@ namespace LittleVictories
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var victory = (Victory)BindingContext;
-            victory.Date = DateTime.UtcNow;
+
+            var victory = new TheVictory()
+            {
+                Title = title.Text,
+                Quick = (string)quick.SelectedItem ?? "N/A",
+                Details = details.Text ?? "No details were entered.",
+                Date = DateTime.UtcNow
+            };
+
             await App.Database.SaveVictoryAsync(victory);
             await Navigation.PopAsync();
         }
+
     }
 }

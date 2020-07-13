@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Xamarin.Forms;
 using LittleVictories.Models;
 
@@ -18,26 +16,38 @@ namespace LittleVictories
         {
             base.OnAppearing();
 
-            victoryView.ItemsSource = await App.Database.GetVictoriesAsync();
+            VictoryListView.ItemsSource = await App.Database.GetVictoriesAsync();
+
+            if (((List<TheVictory>) VictoryListView.ItemsSource).Count == 0)
+            {
+                VictoryListView.IsVisible = false;
+                EmptyMessage.IsVisible = true;
+            }
+            else
+            {
+                VictoryListView.IsVisible = true;
+                EmptyMessage.IsVisible = false;
+            }
         }
 
-        async void OnVictoryAddedClicked(object sender, EventArgs e)
+        async void OnVictoryAddClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddVictory
+            await Navigation.PushAsync(new AddVictory()
             {
-                BindingContext = new Victory()
+                BindingContext = new TheVictory()
             });
         }
 
-        async void OnVictoryViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new ViewVictory
+                await Navigation.PushAsync(new ViewVictory()
                 {
-                    BindingContext = e.SelectedItem as Victory
+                    BindingContext = e.SelectedItem as TheVictory
                 });
             }
         }
+
     }
 }

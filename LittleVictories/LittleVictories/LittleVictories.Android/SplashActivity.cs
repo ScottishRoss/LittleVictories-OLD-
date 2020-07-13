@@ -6,8 +6,10 @@ using Android.Support.V7.App;
 using Android.Util;
 
 namespace LittleVictories.Droid
+
+
 {
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + nameof(SplashActivity);
@@ -33,7 +35,7 @@ namespace LittleVictories.Droid
         async void SimulateStartup ()
         {
             Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
-            await Task.Delay(3000); // Simulate a bit of startup work.
+            await Task.Delay(1000); // Simulate a bit of startup work.
             Log.Debug(TAG, "Startup work is finished - starting MainActivity.");
             StartActivity(new Intent(Application.Context, typeof (MainActivity)));
         }

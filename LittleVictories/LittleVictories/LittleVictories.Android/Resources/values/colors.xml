@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-  <color name="primary">#85e4fe</color>
-  <color name="primaryDark">#2b59c3</color>
+  <color name="primary">#8759D7</color>
+  <color name="primaryDark">@android:color/transparent</color>
   <color name="accent">#f8e16c</color>
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#FFFFFF</color>
