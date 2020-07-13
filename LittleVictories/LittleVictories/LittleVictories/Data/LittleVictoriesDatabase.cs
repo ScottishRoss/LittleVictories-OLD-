@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
 using LittleVictories.Models;
@@ -19,13 +18,6 @@ namespace LittleVictories.Data
         public Task<List<TheVictory>> GetVictoriesAsync()
         {
             return _database.Table<TheVictory>().OrderByDescending(x => x.Date).ToListAsync();
-        }
-
-        public Task<TheVictory> GetVictoryAsync(int ID)
-        {
-            return _database.Table<TheVictory>()
-                            .Where(i => i.Id == ID)
-                            .FirstOrDefaultAsync();
         }
 
         public Task<int> SaveVictoryAsync(TheVictory victory)

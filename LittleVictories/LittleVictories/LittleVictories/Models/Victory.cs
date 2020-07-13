@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using SQLite;
 
 namespace LittleVictories.Models
@@ -12,10 +11,5 @@ namespace LittleVictories.Models
         public string Quick { get; set; }
         public string Details { get; set; }
         public DateTime Date { get; set; }
-    }
-
-    public class IconFonts<TSocialItem>
-    {
-        public List<TSocialItem> SocialItems { get; set; }
     }
 }

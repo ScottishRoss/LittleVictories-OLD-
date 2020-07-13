@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using LittleVictories.Data;
-using LittleVictories.Models;
 using Xamarin.Forms;
 
 namespace LittleVictories
@@ -15,21 +13,16 @@ namespace LittleVictories
         {
             get
             {
-                if (database == null)
-                {
-                    database = new LittleVictoriesDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "LittleVictories.db3"));
-                }
-                return database;
+                return database ?? (database = new LittleVictoriesDatabase(Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "LittleVictories.db3")));
             }
         }
-        public class ExportFont
-        {
-        }
-
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new YourVictories());
+            var splashPage = new NavigationPage(new SplashPage());
+            MainPage = splashPage;
         }
 
         protected override void OnStart()

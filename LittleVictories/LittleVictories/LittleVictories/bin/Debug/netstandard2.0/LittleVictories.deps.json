@@ -11,6 +11,7 @@
         "dependencies": {
           "MagicGradients": "1.1.0",
           "NETStandard.Library": "2.0.3",
+          "XForms.Plugin.AnimationNavigationPage": "1.0.8",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.7.0.1080",
           "sqlite-net-pcl": "1.7.335"
@@ -293,6 +294,17 @@
             "fileVersion": "4.7.0.439"
           }
         }
+      },
+      "XForms.Plugin.AnimationNavigationPage/1.0.8": {
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.1080"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FormsControls.Base.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -518,6 +530,13 @@
       "sha512": "sha512-YN04zJoVBBKdhYnIK1lwZJTGCFrHJ+bUfqQK4aKy8oDjthh5JlNcjetUS+eV+JK9XcmYpS2SxpmDxFFXxSfONQ==",
       "path": "xamarin.forms/4.7.0.1080",
       "hashPath": "xamarin.forms.4.7.0.1080.nupkg.sha512"
+    },
+    "XForms.Plugin.AnimationNavigationPage/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6w9mIG1xUBz2nIIVvPxt7qIGoDFd3Hle8tmNi9C5GQUm++No6fjTR/HadiogbWgAsJtvXSgpgfLMW+cl809fNg==",
+      "path": "xforms.plugin.animationnavigationpage/1.0.8",
+      "hashPath": "xforms.plugin.animationnavigationpage.1.0.8.nupkg.sha512"
     }
   }
 }

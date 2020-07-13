@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using LittleVictories.Models;
 
-[assembly: ExportFont("blackjack-webfont.ttf", Alias = "BlackJack")]
-
 namespace LittleVictories
 {
     public partial class YourVictories : ContentPage
@@ -13,14 +11,23 @@ namespace LittleVictories
         {
             InitializeComponent();
         }
-        public class ExportFont
-        {
-        }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
             VictoryListView.ItemsSource = await App.Database.GetVictoriesAsync();
+
+            if (((List<TheVictory>) VictoryListView.ItemsSource).Count == 0)
+            {
+                VictoryListView.IsVisible = false;
+                EmptyMessage.IsVisible = true;
+            }
+            else
+            {
+                VictoryListView.IsVisible = true;
+                EmptyMessage.IsVisible = false;
+            }
         }
 
         async void OnVictoryAddClicked(object sender, EventArgs e)
@@ -29,8 +36,6 @@ namespace LittleVictories
             {
                 BindingContext = new TheVictory()
             });
-
-
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -43,6 +48,6 @@ namespace LittleVictories
                 });
             }
         }
-        
+
     }
 }
