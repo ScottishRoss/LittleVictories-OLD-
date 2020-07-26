@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
 
             <TableView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
-                       Intent="Form" HasUnevenRows="true">
+                       Intent="Form" HasUnevenRows="true" Margin="0, 40">
                 <TableSection>
                     <ViewCell>
                         <StackLayout Padding="15">
