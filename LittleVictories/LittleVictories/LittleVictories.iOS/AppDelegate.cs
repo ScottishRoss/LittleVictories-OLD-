@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
 using UIKit;
 
@@ -23,7 +20,7 @@ namespace LittleVictories.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Xamarin.Forms.Forms.Init();
-                //FormsControls.Touch.Main.Init();
+            //FormsControls.Touch.Main.Init();
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

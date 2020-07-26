@@ -3,7 +3,6 @@
 <resources>
   <color name="primary">#8759D7</color>
   <color name="primaryDark">@android:color/transparent</color>
-  <color name="accent"></color>
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#FFFFFF</color>
 </resources>

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using LittleVictories.Models;
 using SQLite;
-using LittleVictories.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LittleVictories.Data
 {
