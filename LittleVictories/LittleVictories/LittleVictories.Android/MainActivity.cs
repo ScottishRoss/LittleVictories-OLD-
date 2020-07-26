@@ -6,7 +6,7 @@ using Android.Runtime;
 
 namespace LittleVictories.Droid
 {
-    [Activity(Label = "LittleVictories", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme",
+    [Activity(Label = "LittleVictories", Icon = "@drawable/ic_launcher.png", Theme = "@style/MainTheme",
         MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

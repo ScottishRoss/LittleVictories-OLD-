@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace LittleVictories.Droid
 
-
 {
     [Activity(Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
