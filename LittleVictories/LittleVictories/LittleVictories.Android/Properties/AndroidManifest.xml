@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.littlevictories">
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-    <application android:label="LittleVictories.Android"></application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="rphenderson.dev.littlevictories" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<application android:label="Little Victories" android:icon="@mipmap/ic_launcher">
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-7100257291492276~4761790441"/>
+  </application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
+  
 </manifest>

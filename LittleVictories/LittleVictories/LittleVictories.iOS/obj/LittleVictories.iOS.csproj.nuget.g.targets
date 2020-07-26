@@ -4,7 +4,10 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\4.7.0.1080\buildTransitive\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.7.0.1080\buildTransitive\Xamarin.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.firebase.ios.core\6.6.6\buildTransitive\Xamarin.Firebase.iOS.Core.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.firebase.ios.core\6.6.6\buildTransitive\Xamarin.Firebase.iOS.Core.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.google.ios.mobileads\7.57.0\buildTransitive\Xamarin.Google.iOS.MobileAds.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.google.ios.mobileads\7.57.0\buildTransitive\Xamarin.Google.iOS.MobileAds.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\4.7.0.1179\buildTransitive\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.7.0.1179\buildTransitive\Xamarin.Forms.targets')" />
     <Import Project="$(NuGetPackageRoot)fody\6.0.0\build\Fody.targets" Condition="Exists('$(NuGetPackageRoot)fody\6.0.0\build\Fody.targets')" />
   </ImportGroup>
 </Project>

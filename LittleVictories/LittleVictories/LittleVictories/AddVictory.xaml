@@ -36,7 +36,8 @@
                                     VerticalOptions="FillAndExpand"
                                     HeightRequest="50"
                                     Placeholder="Give your Victory a title."
-                                    FontFamily="{StaticResource MontSerrat}"/>
+                                    FontFamily="{StaticResource MontSerrat}"
+                                    MaxLength="34"/>
                             
                         </StackLayout>
                     </ViewCell>

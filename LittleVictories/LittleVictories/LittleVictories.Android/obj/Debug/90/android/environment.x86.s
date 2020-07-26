@@ -2,7 +2,7 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.companyname.littlevictories"
+	.asciz	"rphenderson.dev.littlevictories"
 	.size	.L.env.str.1, 32
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
@@ -71,7 +71,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"64e80ae6-8f9b-4318-b1d5-f390ac43ec3d"
+	.asciz	"af5223f0-3987-46cd-8876-c7d2794623cb"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object

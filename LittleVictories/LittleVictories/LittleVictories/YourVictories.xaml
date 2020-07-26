@@ -8,16 +8,16 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <Image Source="LV_Img"
-                   Margin="0,70"
+            <Image Source="LV_Vector"
                    VerticalOptions="StartAndExpand"
+                   Margin="0,100"
                    HorizontalOptions="CenterAndExpand"/>
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
+                   Margin="43,0"
                    FontFamily="{StaticResource MontSerrat}"
-                   FontSize="Large"
-                   Margin="20, 0"
+                   FontSize="Title"
                    HorizontalTextAlignment="Center">Celebrate a Victory and see them all here!</Label>
             <ListView x:Name="VictoryListView"
                       ItemSelected="OnListViewItemSelected"
@@ -27,35 +27,21 @@
                         <ViewCell>
                             <StackLayout Orientation="Vertical" 
                                          HorizontalOptions="FillAndExpand">
-                                <Label>
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding Title}"
-                                                  FontFamily="{StaticResource MontSerrat}"
-                                                  FontSize="Medium"
-                                                  FontAttributes="Bold"></Span>
-                                            <Span Text=" - "></Span>
-                                            <Span Text="{Binding Date}"
-                                                  FontFamily="{StaticResource MontSerrat}"
-                                                  FontSize="Small"
-                                                  FontAttributes="Italic"></Span>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
+                                <Label Text="{Binding Title}"
+                                       FontFamily="{StaticResource MontSerrat}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       HeightRequest="20"/>
+                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}"
+                                       FontFamily="{StaticResource MontSerrat}"
+                                       FontSize="Small"
+                                       FontAttributes="Italic"
+                                       HeightRequest="20"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Celebrate a Victory!"
-                    x:Name="addButton" 
-                    BackgroundColor="#8759D7" 
-                    TextColor="White" 
-                    Clicked="OnVictoryAddClicked" 
-                    HeightRequest="75"
-                    FontSize="Large"
-                    FontFamily="{StaticResource MontSerrat}"
-                    VerticalOptions="EndAndExpand"/>
 
         </StackLayout>
     </ContentPage.Content>

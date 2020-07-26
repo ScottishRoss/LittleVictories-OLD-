@@ -29,15 +29,6 @@ namespace LittleVictories
                 EmptyMessage.IsVisible = false;
             }
         }
-
-        async void OnVictoryAddClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddVictory()
-            {
-                BindingContext = new TheVictory()
-            });
-        }
-
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)

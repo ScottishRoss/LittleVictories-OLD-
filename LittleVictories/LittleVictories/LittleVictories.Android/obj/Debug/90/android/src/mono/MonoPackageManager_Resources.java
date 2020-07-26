@@ -3,11 +3,10 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "LittleVictories.Android.dll" comes first in this list. */
 		"LittleVictories.Android.dll",
-		"FormsControls.Base.dll",
-		"FormsControls.Droid.dll",
 		"FormsViewGroup.dll",
 		"LittleVictories.dll",
 		"MagicGradients.dll",
+		"Plugin.MtAdmob.dll",
 		"PropertyChanged2.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
@@ -59,6 +58,11 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Ads.Base.dll",
+		"Xamarin.GooglePlayServices.Ads.Lite.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Measurement.Base.dll",
+		"Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

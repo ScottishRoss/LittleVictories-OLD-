@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
     x:Class="LittleVictories.ViewVictory"
     Title="Celebrate a Victory"
     ControlTemplate="{StaticResource PageWithGradient}">
@@ -74,9 +75,11 @@
                                    FontAttributes="Bold"
                                    TextColor="#8759D7"
                                    FontFamily="{StaticResource MontSerrat}"/>
-                            <Label Text ="{Binding Date}"
-                                   FontSize="Large"
-                                   FontFamily="{StaticResource MontSerrat}"/>
+                            <Label FontSize="Large"
+                                   FontFamily="{StaticResource MontSerrat}"
+                                   Text="{Binding Date}">
+                                
+                            </Label>
                         </StackLayout>
                     </ViewCell>
                 </TableSection>
@@ -87,7 +90,7 @@
                     HeightRequest="75"
                     Grid.ColumnSpan="2" 
                     x:Name="saveButton" 
-                    BackgroundColor="#8759D7" 
+                    BackgroundColor="Red" 
                     TextColor="White" 
                     Clicked="OnDeleteButtonClicked"
                     FontSize="Large"
