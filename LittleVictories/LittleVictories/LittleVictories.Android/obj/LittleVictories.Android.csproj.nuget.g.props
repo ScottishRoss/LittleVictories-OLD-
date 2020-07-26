@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.props" Condition="Exists('$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.props')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.androidx.migration\1.0.0.1\buildTransitive\monoandroid90\Xamarin.AndroidX.Migration.props" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.migration\1.0.0.1\buildTransitive\monoandroid90\Xamarin.AndroidX.Migration.props')" />
     <Import Project="$(NuGetPackageRoot)xamarin.forms\4.7.0.1179\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.7.0.1179\buildTransitive\Xamarin.Forms.props')" />
     <Import Project="$(NuGetPackageRoot)propertychanged2.fody\3.1.3\build\PropertyChanged2.Fody.props" Condition="Exists('$(NuGetPackageRoot)propertychanged2.fody\3.1.3\build\PropertyChanged2.Fody.props')" />
   </ImportGroup>

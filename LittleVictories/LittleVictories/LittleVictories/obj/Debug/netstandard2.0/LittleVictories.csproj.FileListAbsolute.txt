@@ -16,3 +16,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csproj.CoreCompileInputs.cache
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csprojAssemblyReference.cache
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csproj.CopyComplete
