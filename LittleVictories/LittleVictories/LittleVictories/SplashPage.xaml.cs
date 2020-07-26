@@ -22,7 +22,7 @@ namespace LittleVictories
         private async void ScaleIcon()
         {
             // wait until the UI is present
-            await Task.Delay(300);
+            await Task.Delay(500);
 
             // animate the splash logo
             await SplashIcon.ScaleTo(0.5, 500, Easing.CubicInOut);
@@ -33,7 +33,7 @@ namespace LittleVictories
             await Task.WhenAll(animationTasks);
 
             //// navigate to main page
-            Navigation.InsertPageBefore(new YourVictories(), Navigation.NavigationStack[0]);
+            Navigation.InsertPageBefore(new HomePage(), Navigation.NavigationStack[0]);
             await Navigation.PopToRootAsync(false);
         }
     }

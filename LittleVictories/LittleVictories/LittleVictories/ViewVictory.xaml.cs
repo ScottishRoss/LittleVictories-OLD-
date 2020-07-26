@@ -6,8 +6,6 @@ namespace LittleVictories
 {
     public partial class ViewVictory : ContentPage
     {
-        TheVictory Victory { get; set; }
-
         public ViewVictory()
         {
             InitializeComponent();

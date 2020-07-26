@@ -12,21 +12,60 @@
                 <On Platform="UWP" Value="/Assets/Montserrat-Regular.ttf" />
                 <On Platform="iOS" Value="Montserrat" />
             </OnPlatform>
-        </ResourceDictionary>
 
+
+        <!-- Main Colours -->
+
+        <Color x:Key="BackgroundColour">#8759D7</Color>
+        <Color x:Key="FontColour">White</Color>
+
+        <!-- Label Style -->
         <Style TargetType="Label">
             <Setter Property="TextColor" Value="White"/>
         </Style>
+        <!-- Entry Style -->
         <Style TargetType="Entry">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="PlaceholderColor" Value="White"/>
         </Style>
+        <!-- Editor Style -->
         <Style TargetType="Editor">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="PlaceholderColor" Value="White"/>
             <Setter Property="FontSize" Value="Subtitle"/>
         </Style>
 
+        <!-- Button Styling for Home Page-->
+        <Style x:Key="BtnPrimary" TargetType="Button">
+             <Setter Property="BackgroundColor">#8759D7</Setter>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="{Binding MontSerrat}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Margin" Value="20,20" />
+                <Setter Property="VerticalOptions" Value="StartAndExpand" />
+                <Setter Property="WidthRequest">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="400" Tablet="800"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HeightRequest">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="120"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="BorderRadius">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="x:Int32" Phone="15" Tablet="25"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Main gradient -->
         <ControlTemplate x:Key="PageWithGradient">
             <Grid>
                 <magicGradients:GradientView VerticalOptions="FillAndExpand" >
@@ -65,5 +104,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "39l8JQdToz+9yJIQSvNoriKDjPfYGEKN4sYwtyCQ5OZSDksZcfbSv9AUVYaNOBQKbqnQ5k0YgqRm6TqjTRmuOg==",
+  "dgSpecHash": "55el1W1In2/xSGxyjGTr9vk7GBqK9KrWExTjFc/K7efT/O4hTH1yhv6hBgLHpAnbvTZFQiaPIWWXuKsxqp7jLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rosss\\Desktop\\GitHub\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories.iOS\\LittleVictories.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rosss\\.nuget\\packages\\fody\\6.0.0\\fody.6.0.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\magicgradients\\1.1.0\\magicgradients.1.1.0.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\marctron.admob\\1.5.6\\marctron.admob.1.5.6.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -62,9 +63,11 @@
     "C:\\Users\\rosss\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512",
-    "C:\\Users\\rosss\\.nuget\\packages\\xforms.plugin.animationnavigationpage\\1.0.8\\xforms.plugin.animationnavigationpage.1.0.8.nupkg.sha512"
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.firebase.ios.core\\6.6.6\\xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.forms\\4.7.0.1179\\xamarin.forms.4.7.0.1179.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.google.ios.mobileads\\7.57.0\\xamarin.google.ios.mobileads.7.57.0.nupkg.sha512"
   ],
   "logs": []
 }

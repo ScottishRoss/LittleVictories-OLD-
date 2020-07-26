@@ -10,10 +10,10 @@
       "LittleVictories/1.0.0": {
         "dependencies": {
           "MagicGradients": "1.1.0",
+          "MarcTron.Admob": "1.5.6",
           "NETStandard.Library": "2.0.3",
-          "XForms.Plugin.AnimationNavigationPage": "1.0.8",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.Forms": "4.7.0.1179",
           "sqlite-net-pcl": "1.7.335"
         },
         "runtime": {
@@ -23,12 +23,24 @@
       "MagicGradients/1.1.0": {
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1179"
         },
         "runtime": {
           "lib/netstandard2.0/MagicGradients.dll": {
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "MarcTron.Admob/1.5.6": {
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "4.7.0.1179"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.MtAdmob.dll": {
+            "assemblyVersion": "1.5.6.0",
+            "fileVersion": "1.5.6.0"
           }
         }
       },
@@ -54,7 +66,7 @@
       "SkiaSharp.Views.Forms/1.68.1.1": {
         "dependencies": {
           "SkiaSharp": "1.68.1.1",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1179"
         }
       },
       "sqlite-net-pcl/1.7.335": {
@@ -268,6 +280,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Xamarin.Build.Download/0.10.0": {},
       "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -279,30 +292,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.7.0.1080": {
+      "Xamarin.Forms/4.7.0.1179": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.439"
+            "fileVersion": "4.7.0.474"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.439"
+            "fileVersion": "4.7.0.474"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.439"
-          }
-        }
-      },
-      "XForms.Plugin.AnimationNavigationPage/1.0.8": {
-        "dependencies": {
-          "Xamarin.Forms": "4.7.0.1080"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FormsControls.Base.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "fileVersion": "4.7.0.474"
           }
         }
       }
@@ -320,6 +322,13 @@
       "sha512": "sha512-7pA1Hof6r8iF64Ev0yJvdHINIrs2nr5VdzGkSXKF6wwo61xi+vp6/rbsp6+z/p5h8kv4EmNKDTLfL3qL9RydrQ==",
       "path": "magicgradients/1.1.0",
       "hashPath": "magicgradients.1.1.0.nupkg.sha512"
+    },
+    "MarcTron.Admob/1.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HD9caGPx865jUHc634nGb425tyJL73svkMWwg+q6iMSLXzWhfOPDQz3VrSSK4fxv0C1MFh148PYMRinxydBNFA==",
+      "path": "marctron.admob/1.5.6",
+      "hashPath": "marctron.admob.1.5.6.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -517,6 +526,13 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
+    "Xamarin.Build.Download/0.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XiQNxx6Jox00O80sJRlZv6jXDZ/r3KC7SMwzQNQcD1gZ+vsZyJH3LcSpdJ5NiZhRrWZlTGNSbooHsOBF7lBOyQ==",
+      "path": "xamarin.build.download/0.10.0",
+      "hashPath": "xamarin.build.download.0.10.0.nupkg.sha512"
+    },
     "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
       "serviceable": true,
@@ -524,19 +540,12 @@
       "path": "xamarin.essentials/1.5.3.2",
       "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.7.0.1080": {
+    "Xamarin.Forms/4.7.0.1179": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YN04zJoVBBKdhYnIK1lwZJTGCFrHJ+bUfqQK4aKy8oDjthh5JlNcjetUS+eV+JK9XcmYpS2SxpmDxFFXxSfONQ==",
-      "path": "xamarin.forms/4.7.0.1080",
-      "hashPath": "xamarin.forms.4.7.0.1080.nupkg.sha512"
-    },
-    "XForms.Plugin.AnimationNavigationPage/1.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6w9mIG1xUBz2nIIVvPxt7qIGoDFd3Hle8tmNi9C5GQUm++No6fjTR/HadiogbWgAsJtvXSgpgfLMW+cl809fNg==",
-      "path": "xforms.plugin.animationnavigationpage/1.0.8",
-      "hashPath": "xforms.plugin.animationnavigationpage.1.0.8.nupkg.sha512"
+      "sha512": "sha512-QY/wwwG/OTOK9UGUalL4u3fKDQ5bh86nVa+M8bmKCq8/QdgZSXRQ/YVwDh0Mew0MaKsZZwTZUNGOGRc52fb+/Q==",
+      "path": "xamarin.forms/4.7.0.1179",
+      "hashPath": "xamarin.forms.4.7.0.1179.nupkg.sha512"
     }
   }
 }

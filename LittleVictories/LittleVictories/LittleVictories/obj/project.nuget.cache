@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "w0GUcRF676utFmHk4iWEu+geQa2540JlkoPH6yfACtRQN02inASsotnKvVSLnjbS9I53J2+8Js00IcHeTwVDLA==",
+  "dgSpecHash": "gHnwkbUJJJKJK+xlHQ8aNyCdi1MyYfrAY1iXnn7hyTstXSsGs5t8ac/BqI92njk6bAZOJ9zI2zEhhHEtLUR+sw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rosss\\Desktop\\GitHub\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rosss\\.nuget\\packages\\magicgradients\\1.1.0\\magicgradients.1.1.0.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\marctron.admob\\1.5.6\\marctron.admob.1.5.6.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
@@ -33,9 +34,9 @@
     "C:\\Users\\rosss\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Users\\rosss\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512",
-    "C:\\Users\\rosss\\.nuget\\packages\\xforms.plugin.animationnavigationpage\\1.0.8\\xforms.plugin.animationnavigationpage.1.0.8.nupkg.sha512"
+    "C:\\Users\\rosss\\.nuget\\packages\\xamarin.forms\\4.7.0.1179\\xamarin.forms.4.7.0.1179.nupkg.sha512"
   ],
   "logs": []
 }
