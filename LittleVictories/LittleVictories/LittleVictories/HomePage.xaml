@@ -25,8 +25,8 @@
                     Clicked="OnVictoryAddClicked" />
 
             <controls:MTAdView x:Name="myAds" IsVisible="true" VerticalOptions="EndAndExpand" 
-                               AdsId="{OnPlatform Android='ca-app-pub-3940256099942544/6300978111', 
-                                       iOS='ca-app-pub-3940256099942544/2934735716'}">
+                               AdsId="{OnPlatform Android='ca-app-pub-7100257291492276~4761790441', 
+                                       iOS='ca-app-pub-7100257291492276~4761790441'}">
                 <controls:MTAdView.HeightRequest>
                     <x:OnIdiom>
                         <x:OnIdiom.Phone>50</x:OnIdiom.Phone>
