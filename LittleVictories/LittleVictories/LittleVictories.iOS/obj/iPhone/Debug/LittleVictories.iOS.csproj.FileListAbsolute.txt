@@ -1,6 +1,7 @@
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\LittleVictories.iOS.exe
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\LittleVictories.iOS.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\MagicGradients.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Plugin.MtAdmob.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\SkiaSharp.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
@@ -20,6 +21,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\System.Security.Cryptography.X509Certificates.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Firebase.Core.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
@@ -59,10 +61,14 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Google.MobileAds.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\LittleVictories.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\LittleVictories.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.pdb
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.xml
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
@@ -76,9 +82,3 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CopyComplete
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.exe
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Plugin.MtAdmob.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Firebase.Core.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Google.MobileAds.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.xml
