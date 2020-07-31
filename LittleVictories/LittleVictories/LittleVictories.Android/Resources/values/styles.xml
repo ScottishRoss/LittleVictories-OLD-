@@ -15,7 +15,6 @@
     <!-- colorPrimary is used for the default action bar background -->
     <item name="colorPrimary">@color/primary</item>
 
-    
     <!-- colorPrimaryDark is used for the status bar -->
     <!--<item name="colorPrimaryDark">#FF4081</item>-->
     <!-- So instead make it translucent. -->

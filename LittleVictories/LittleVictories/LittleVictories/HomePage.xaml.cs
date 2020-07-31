@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using LittleVictories.Models;
+using System;
 using Xamarin.Forms;
-using LittleVictories.Models;
 
 namespace LittleVictories
 {
@@ -12,10 +11,10 @@ namespace LittleVictories
             InitializeComponent();
         }
 
-       /* protected override async void OnAppearing()
-        {
-            base.OnAppearing();x
-        } */
+        /* protected override async void OnAppearing()
+         {
+             base.OnAppearing();x
+         } */
 
         async void OnVictoryAddClicked(object sender, EventArgs e)
         {

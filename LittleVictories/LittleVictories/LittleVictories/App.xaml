@@ -16,14 +16,15 @@
 
         <!-- Main Colours -->
 
-        <Color x:Key="BackgroundColour">#8759D7</Color>
-        <Color x:Key="FontColour">White</Color>
+            <Color x:Key="BackgroundColour">#8759D7</Color>
+            <Color x:Key="FontColour">White</Color>
+            <Color x:Key="TitleFontColour">#8759D7</Color>
 
         <!-- Label Style -->
-        <Style TargetType="Label">
-            <Setter Property="TextColor" Value="White"/>
-        </Style>
-        <!-- Entry Style -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <!-- Entry Style -->
         <Style TargetType="Entry">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="PlaceholderColor" Value="White"/>

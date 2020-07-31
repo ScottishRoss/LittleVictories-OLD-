@@ -30,15 +30,14 @@
                             <Label Text="Victory Title"
                                    FontSize="Subtitle"
                                    FontAttributes="Bold"
-                                   TextColor="#8759D7"
+                                   TextColor="{StaticResource TitleFontColour}"
                                    FontFamily="{StaticResource MontSerrat}"/>
-                                <Editor x:Name="title" 
+                            <Editor x:Name="title" 
                                     VerticalOptions="FillAndExpand"
                                     HeightRequest="50"
                                     Placeholder="Give your Victory a title."
                                     FontFamily="{StaticResource MontSerrat}"
                                     MaxLength="34"/>
-                            
                         </StackLayout>
                     </ViewCell>
                 </TableSection>
@@ -49,7 +48,7 @@
                             <Label Text="Choose a Victory"
                                    FontSize="Subtitle"
                                    FontAttributes="Bold"
-                                   TextColor="#8759D7"
+                                   TextColor="{StaticResource TitleFontColour}"
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Picker x:Name="quick" 
                                     Title="- Select -"
@@ -62,7 +61,7 @@
                                     <x:String>Paid a bill</x:String>
                                     <x:String>Went for a walk</x:String>
                                     <x:String>Ate a meal</x:String>
-                                    <x:String>Socialized</x:String>
+                                    <x:String>Socialised</x:String>
                                     <x:String>Enjoyed a hobby</x:String>
                                     <x:String>Exercised</x:String>
                                     <x:String>Did some housework</x:String>
@@ -81,7 +80,7 @@
                         <Label Text="Victory Details"
                                FontSize="Subtitle"
                                FontAttributes="Bold"
-                               TextColor="#8759D7"
+                               TextColor="{StaticResource TitleFontColour}"
                                FontFamily="{StaticResource MontSerrat}"/>
                         <Editor x:Name="details" 
                                 VerticalOptions="FillAndExpand"
@@ -100,10 +99,10 @@
                     HeightRequest="75"
                     Grid.ColumnSpan="2" 
                     x:Name="saveButton" 
-                    BackgroundColor="#8759D7" 
+                    BackgroundColor="{StaticResource BackgroundColour}" 
                     FontSize="Large"
                     FontFamily="{StaticResource MontSerrat}"
-                    TextColor="White" 
+                    TextColor="{StaticResource FontColour}" 
                     Clicked="OnSaveButtonClicked"/>
         </Grid>
     </ContentPage.Content>

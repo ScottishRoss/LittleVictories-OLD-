@@ -1,7 +1,6 @@
 ﻿using LittleVictories.Models;
 using System;
 using Xamarin.Forms;
-using Xamarin.Essentials;
 
 namespace LittleVictories
 {

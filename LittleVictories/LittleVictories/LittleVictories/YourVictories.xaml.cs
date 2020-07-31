@@ -1,7 +1,6 @@
-﻿using System;
+﻿using LittleVictories.Models;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using LittleVictories.Models;
 
 namespace LittleVictories
 {
@@ -18,7 +17,7 @@ namespace LittleVictories
 
             VictoryListView.ItemsSource = await App.Database.GetVictoriesAsync();
 
-            if (((List<TheVictory>) VictoryListView.ItemsSource).Count == 0)
+            if (((List<TheVictory>)VictoryListView.ItemsSource).Count == 0)
             {
                 VictoryListView.IsVisible = false;
                 EmptyMessage.IsVisible = true;

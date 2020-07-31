@@ -1,5 +1,5 @@
-﻿using System;
-using SQLite;
+﻿using SQLite;
+using System;
 
 namespace LittleVictories.Models
 {

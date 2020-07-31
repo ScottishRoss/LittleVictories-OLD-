@@ -1,12 +1,12 @@
 ﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.OS;
 using Android.Gms.Ads;
+using Android.OS;
+using Android.Runtime;
 
 namespace LittleVictories.Droid
 {
-    [Activity(Label = "LittleVictories", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", 
+    [Activity(Label = "LittleVictories", Icon = "@drawable/icon", Theme = "@style/MainTheme",
         MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
