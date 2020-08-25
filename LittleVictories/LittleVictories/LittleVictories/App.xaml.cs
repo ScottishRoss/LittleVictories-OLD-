@@ -43,10 +43,10 @@ namespace LittleVictories
            
         public App()
         {
-            InitializeComponent();
-
             var splashPage = new NavigationPage(new SplashPage());
             MainPage = splashPage;
+
+            InitializeComponent();
         }
 
         protected override void OnStart()

@@ -56,7 +56,8 @@
                                     HorizontalOptions="FillAndExpand"
                                     TextColor="#8759D7"
                                     FontFamily="{StaticResource MontSerrat}"
-                                    ItemDisplayBinding="{Binding Desc}">
+                                    ItemDisplayBinding="{Binding Desc}"
+                                    SelectedItem="{Binding SelectedDesc}">
                             </Picker>
 
                         </StackLayout>

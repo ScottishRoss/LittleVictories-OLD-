@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace LittleVictories
 {
@@ -59,6 +60,7 @@ namespace LittleVictories
         async void OnAddQuickVictoryClicked(object sender, System.EventArgs e)
         {
             string desc = await DisplayPromptAsync("Add Quick Victory", "Enter the Quick Victory here.");
+            TextInfo textInfo = new CultureInfo("en-GB", false).TextInfo;
 
             if (string.IsNullOrWhiteSpace(desc))
             {
@@ -68,7 +70,7 @@ namespace LittleVictories
             {
                 var quickVictory = new QuickVictories()
                 {
-                    Desc = desc
+                    Desc = textInfo.ToTitleCase(desc)
                 };
 
                 await App.Database.SaveQuickVictoryAsync(quickVictory);

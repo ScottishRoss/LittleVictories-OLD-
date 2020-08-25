@@ -20,8 +20,7 @@ namespace LittleVictories.Droid
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
-            
+    
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7100257291492276~4761790441");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
