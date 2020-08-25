@@ -1,7 +1,9 @@
-﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LittleVictories.SplashPage"
-             BackgroundColor="#2196F3">
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="LittleVictories.SplashPage">
     <ContentPage.Content>
         <Grid>
             <Image x:Name="SplashIcon"
@@ -9,11 +11,8 @@
                    VerticalOptions="Center">
                 <Image.Source>
                     <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="UWP">
-                            <FileImageSource File="Assets/LV_Vector.png" />
-                        </On>
                         <On Platform="Android, iOS">
-                            <FileImageSource File="LV_Vector.png" />
+                            <FileImageSource File="LVMain.png" />
                         </On>
                     </OnPlatform>
                 </Image.Source>

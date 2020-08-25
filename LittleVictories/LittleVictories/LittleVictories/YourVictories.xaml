@@ -7,55 +7,46 @@
              ControlTemplate="{StaticResource PageWithGradient}">
     <ContentPage.Content>
 
-        <StackLayout>
-            <Image Source="LV_Img"
-                   Margin="0,70"
+        <StackLayout Spacing="0" 
+                     VerticalOptions="StartAndExpand" 
+                     HorizontalOptions="StartAndExpand">
+            <Image Source="LVMain"
                    VerticalOptions="StartAndExpand"
+                   Margin="10,50"
                    HorizontalOptions="CenterAndExpand"/>
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
+                   Margin="43,0"
                    FontFamily="{StaticResource MontSerrat}"
-                   FontSize="Large"
-                   Margin="20, 0"
+                   FontSize="Title"
                    HorizontalTextAlignment="Center">Celebrate a Victory and see them all here!</Label>
             <ListView x:Name="VictoryListView"
                       ItemSelected="OnListViewItemSelected"
-                      Margin="20,0">
+                      Margin="20,0"
+                      VerticalOptions="StartAndExpand"
+                      HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical" 
-                                         HorizontalOptions="FillAndExpand">
-                                <Label>
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding Title}"
-                                                  FontFamily="{StaticResource MontSerrat}"
-                                                  FontSize="Medium"
-                                                  FontAttributes="Bold"></Span>
-                                            <Span Text=" - "></Span>
-                                            <Span Text="{Binding Date}"
-                                                  FontFamily="{StaticResource MontSerrat}"
-                                                  FontSize="Small"
-                                                  FontAttributes="Italic"></Span>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
+                                         HorizontalOptions="FillAndExpand"
+                                         Margin="20,0">
+                                <Label Text="{Binding Title}"
+                                       FontFamily="{StaticResource MontSerrat}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       HeightRequest="25"/>
+                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}"
+                                       FontFamily="{StaticResource MontSerrat}"
+                                       FontSize="Small"
+                                       FontAttributes="Italic"
+                                       HeightRequest="25"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Celebrate a Victory!"
-                    x:Name="addButton" 
-                    BackgroundColor="#8759D7" 
-                    TextColor="White" 
-                    Clicked="OnVictoryAddClicked" 
-                    HeightRequest="75"
-                    FontSize="Large"
-                    FontFamily="{StaticResource MontSerrat}"
-                    VerticalOptions="EndAndExpand"/>
 
         </StackLayout>
     </ContentPage.Content>

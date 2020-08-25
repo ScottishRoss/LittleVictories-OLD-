@@ -1,13 +1,11 @@
-﻿using System;
-using LittleVictories.Models;
+﻿using LittleVictories.Models;
+using System;
 using Xamarin.Forms;
 
 namespace LittleVictories
 {
     public partial class ViewVictory : ContentPage
     {
-        TheVictory Victory { get; set; }
-
         public ViewVictory()
         {
             InitializeComponent();
@@ -24,9 +22,9 @@ namespace LittleVictories
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             bool answer = await DisplayAlert(
-                    "Delete Confirmation", 
-                    "Are you sure you want to delete your Victory?", 
-                    "Yes", 
+                    "Delete Confirmation",
+                    "Are you sure you want to delete your Victory?",
+                    "Yes",
                     "No"
                 );
 

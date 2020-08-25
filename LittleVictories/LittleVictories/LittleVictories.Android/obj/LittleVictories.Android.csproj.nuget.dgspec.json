@@ -23,14 +23,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid90"
+          "monoandroid10.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid90": {
+          "monoandroid10.0": {
             "projectReferences": {
               "C:\\Users\\rosss\\Desktop\\GitHub\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories.csproj": {
                 "projectPath": "C:\\Users\\rosss\\Desktop\\GitHub\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories\\LittleVictories.csproj"
@@ -40,15 +40,15 @@
         }
       },
       "frameworks": {
-        "monoandroid90": {
+        "monoandroid10.0": {
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
               "version": "[1.1.0, )"
             },
-            "PropertyChanged2.Fody": {
+            "MarcTron.Admob": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[1.5.7, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -56,7 +56,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.1080, )"
+              "version": "[4.7.0.1260, )"
             }
           }
         }
@@ -104,15 +104,19 @@
               "target": "Package",
               "version": "[1.1.0, )"
             },
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.5.7, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "XForms.Plugin.AnimationNavigationPage": {
+            "PCLStorage": {
               "target": "Package",
-              "version": "[1.0.8, )"
+              "version": "[1.0.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -120,7 +124,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.1080, )"
+              "version": "[4.7.0.1260, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -137,7 +141,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,37 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             x:Class="LittleVictories.Preferences"
+             xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             ios:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="False"
+             ControlTemplate="{StaticResource PageWithGradient}">
+    <ContentPage.Content>
+
+        <StackLayout Spacing="0" 
+                     VerticalOptions="StartAndExpand" 
+                     HorizontalOptions="StartAndExpand">
+            <Image Source="LVMain"
+                   VerticalOptions="StartAndExpand"
+                   Margin="10,50"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Button Text="Quick Victories"
+                    x:Name="qvButton" 
+                    Style="{StaticResource BtnPrimary}"
+                    Clicked="OnQuickVictoriesClicked" 
+                    VerticalOptions="StartAndExpand"/>
+
+            <controls:MTAdView x:Name="myAds" IsVisible="true" VerticalOptions="EndAndExpand" 
+                               AdsId="{OnPlatform Android='ca-app-pub-7100257291492276/9917181683'}">
+                <controls:MTAdView.HeightRequest>
+                    <x:OnIdiom>
+                        <x:OnIdiom.Phone>50</x:OnIdiom.Phone>
+                        <x:OnIdiom.Tablet>90</x:OnIdiom.Tablet>
+                        <x:OnIdiom.Desktop>90</x:OnIdiom.Desktop>
+                    </x:OnIdiom>
+                </controls:MTAdView.HeightRequest>
+            </controls:MTAdView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
