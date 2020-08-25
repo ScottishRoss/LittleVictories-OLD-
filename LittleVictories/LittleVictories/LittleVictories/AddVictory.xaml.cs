@@ -8,7 +8,14 @@ namespace LittleVictories
     {
         public AddVictory()
         {
-            InitializeComponent();
+            InitializeComponent();   
+
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            quickPicker.ItemsSource = await App.Database.GetQuickVictoriesAsync();
         }
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
@@ -17,7 +24,7 @@ namespace LittleVictories
             var victory = new TheVictory()
             {
                 Title = title.Text ?? "No title",
-                Quick = (string)quick.SelectedItem ?? "N/A",
+                Quick = (string)quickPicker.SelectedItem ?? "N/A",
                 Details = details.Text ?? "No details were entered.",
                 Date = DateTime.UtcNow
             };
@@ -32,5 +39,6 @@ namespace LittleVictories
 
             await Navigation.PopAsync();
         }
+
     }
 }

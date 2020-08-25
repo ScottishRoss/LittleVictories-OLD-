@@ -13,34 +13,34 @@
                 <On Platform="iOS" Value="Montserrat" />
             </OnPlatform>
 
-
-        <!-- Main Colours -->
-
+            <!-- Main Colours -->
             <Color x:Key="BackgroundColour">#8759D7</Color>
             <Color x:Key="FontColour">White</Color>
             <Color x:Key="TitleFontColour">#8759D7</Color>
 
-        <!-- Label Style -->
+            <!-- Label Style -->
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="White"/>
             </Style>
+            
             <!-- Entry Style -->
-        <Style TargetType="Entry">
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="PlaceholderColor" Value="White"/>
-        </Style>
-        <!-- Editor Style -->
-        <Style TargetType="Editor">
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="PlaceholderColor" Value="White"/>
-            <Setter Property="FontSize" Value="Subtitle"/>
-        </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="PlaceholderColor" Value="White"/>
+            </Style>
+            
+            <!-- Editor Style -->
+            <Style TargetType="Editor">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="PlaceholderColor" Value="White"/>
+                <Setter Property="FontSize" Value="Subtitle"/>
+            </Style>
 
-        <!-- Button Styling for Home Page-->
-        <Style x:Key="BtnPrimary" TargetType="Button">
-             <Setter Property="BackgroundColor">#8759D7</Setter>
+            <!-- Button Styling for Home Page-->
+            <Style x:Key="BtnPrimary" TargetType="Button">
+                <Setter Property="BackgroundColor">#8759D7</Setter>
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="{Binding MontSerrat}" />
+                <Setter Property="FontFamily" Value="{StaticResource MontSerrat}" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40"/>
@@ -49,62 +49,78 @@
                 <Setter Property="Margin" Value="20,20" />
                 <Setter Property="VerticalOptions" Value="StartAndExpand" />
                 <Setter Property="WidthRequest">
-                <Setter.Value>
-                    <OnIdiom x:TypeArguments="x:Double" Phone="400" Tablet="800"/>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="HeightRequest">
-                <Setter.Value>
-                    <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="120"/>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="HorizontalOptions" Value="Center" />
-            <Setter Property="BorderRadius">
-                <Setter.Value>
-                    <OnIdiom x:TypeArguments="x:Int32" Phone="15" Tablet="25"/>
-                </Setter.Value>
-            </Setter>
-        </Style>
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="400" Tablet="800"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="120"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="BorderRadius">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Int32" Phone="15" Tablet="25"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
 
-        <!-- Main gradient -->
-        <ControlTemplate x:Key="PageWithGradient">
-            <Grid>
-                <magicGradients:GradientView VerticalOptions="FillAndExpand" >
-                    <magicGradients:GradientView.GradientSource>
-                        <magicGradients:CssGradientSource>
-                            <x:String>
-                                <![CDATA[
+            <Style x:Key="BtnDelete" TargetType="Button">
+                <Setter Property="BackgroundColor">#EA5E42</Setter>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="{StaticResource MontSerrat}" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HeightRequest">75</Setter>
+            </Style>
+
+            <Style x:Key="BtnAdd" TargetType="Button">
+                <Setter Property="BackgroundColor">#8759D7</Setter>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="{StaticResource MontSerrat}" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HeightRequest">75</Setter>
+            </Style>
+
+            <!-- Main gradient -->
+            <ControlTemplate x:Key="PageWithGradient">
+                <Grid>
+                    <magicGradients:GradientView VerticalOptions="FillAndExpand" >
+                        <magicGradients:GradientView.GradientSource>
+                            <magicGradients:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
                                     radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(133,228,254),rgb(135, 89, 215))
                                 ]]>
-                            </x:String>
-                        </magicGradients:CssGradientSource>
-                    </magicGradients:GradientView.GradientSource>
-                </magicGradients:GradientView>
-                <ContentPresenter />
-            </Grid>
-        </ControlTemplate>
-        <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
-            <Setter Property="ControlTemplate">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Grid>
-                            <magicGradients:GradientView VerticalOptions="FillAndExpand" >
-                                <magicGradients:GradientView.GradientSource>
-                                    <magicGradients:CssGradientSource>
-                                        <x:String>
-                                            <![CDATA[
+                                </x:String>
+                            </magicGradients:CssGradientSource>
+                        </magicGradients:GradientView.GradientSource>
+                    </magicGradients:GradientView>
+                    <ContentPresenter />
+                </Grid>
+            </ControlTemplate>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="ControlTemplate">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid>
+                                <magicGradients:GradientView VerticalOptions="FillAndExpand" >
+                                    <magicGradients:GradientView.GradientSource>
+                                        <magicGradients:CssGradientSource>
+                                            <x:String>
+                                                <![CDATA[
                                     radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(133,228,254),rgb(135, 89, 215))
                                     ]]>
-                                        </x:String>
-                                    </magicGradients:CssGradientSource>
-                                </magicGradients:GradientView.GradientSource>
-                            </magicGradients:GradientView>
-                            <ContentPresenter />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+                                            </x:String>
+                                        </magicGradients:CssGradientSource>
+                                    </magicGradients:GradientView.GradientSource>
+                                </magicGradients:GradientView>
+                                <ContentPresenter />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

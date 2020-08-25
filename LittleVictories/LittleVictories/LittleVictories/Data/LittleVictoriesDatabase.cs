@@ -1,6 +1,8 @@
 ﻿using LittleVictories.Models;
 using SQLite;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace LittleVictories.Data
@@ -11,10 +13,19 @@ namespace LittleVictories.Data
 
         public LittleVictoriesDatabase(string dbPath)
         {
+
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<TheVictory>().Wait();
-        }
 
+        }
+        public Task<List<QuickVictories>> GetQuickVictoriesEditableAsync()
+        {
+            return _database.QueryAsync<QuickVictories>("select * from QuickVictories where Id != ?", 0);
+        }
+        public Task<List<QuickVictories>> GetQuickVictoriesAsync()
+        {
+            return _database.QueryAsync<QuickVictories>("select * from QuickVictories order by case when DisplaySeq is null then 0 else 1 end, DisplaySeq");
+        }
         public Task<List<TheVictory>> GetVictoriesAsync()
         {
             return _database.Table<TheVictory>().OrderByDescending(x => x.Date).ToListAsync();
@@ -35,6 +46,22 @@ namespace LittleVictories.Data
         public Task<int> DeleteVictoryAsync(TheVictory victory)
         {
             return _database.DeleteAsync(victory);
+        }
+
+        public Task<int> SaveQuickVictoryAsync (QuickVictories quickVictories)
+        {
+            if (quickVictories.Id != 0)
+            {
+                return _database.UpdateAsync(quickVictories);
+            }
+            else
+            {
+                return _database.InsertAsync(quickVictories);
+            }
+        }
+        public Task<int> DeleteQuickVictoryAsync(QuickVictories quickVictories)
+        {
+            return _database.DeleteAsync(quickVictories);
         }
     }
 }

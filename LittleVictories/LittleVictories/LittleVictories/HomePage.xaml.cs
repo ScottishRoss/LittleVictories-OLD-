@@ -11,16 +11,23 @@ namespace LittleVictories
             InitializeComponent();
         }
 
-        /* protected override async void OnAppearing()
-         {
-             base.OnAppearing();x
-         } */
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+        } 
 
         async void OnVictoryAddClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddVictory()
             {
                 BindingContext = new TheVictory()
+            });
+        }
+
+        async void OnPreferencesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Preferences()
+            {
             });
         }
 

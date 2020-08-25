@@ -10,10 +10,11 @@
       "LittleVictories/1.0.0": {
         "dependencies": {
           "MagicGradients": "1.1.0",
-          "MarcTron.Admob": "1.5.6",
+          "MarcTron.Admob": "1.5.7",
           "NETStandard.Library": "2.0.3",
+          "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1179",
+          "Xamarin.Forms": "4.7.0.1260",
           "sqlite-net-pcl": "1.7.335",
           "Mono.Android": "0.0.0.0"
         },
@@ -24,7 +25,7 @@
       "MagicGradients/1.1.0": {
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Forms": "4.7.0.1179"
+          "Xamarin.Forms": "4.7.0.1260"
         },
         "runtime": {
           "lib/netstandard2.0/MagicGradients.dll": {
@@ -33,23 +34,60 @@
           }
         }
       },
-      "MarcTron.Admob/1.5.6": {
+      "MarcTron.Admob/1.5.7": {
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "4.7.0.1179"
+          "Xamarin.Forms": "4.7.0.1260"
         },
         "runtime": {
           "lib/netstandard2.0/Plugin.MtAdmob.dll": {
-            "assemblyVersion": "1.5.6.0",
-            "fileVersion": "1.5.6.0"
+            "assemblyVersion": "1.5.7.0",
+            "fileVersion": "1.5.7.0"
           }
         }
       },
+      "Microsoft.Bcl/1.1.6": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.10"
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.165": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.6"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "1.0.12.0",
+            "fileVersion": "1.0.165.0"
+          },
+          "lib/net45/Microsoft.Threading.Tasks.dll": {
+            "assemblyVersion": "1.0.12.0",
+            "fileVersion": "1.0.165.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.10": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.6",
+          "Microsoft.Bcl.Async": "1.0.165"
+        },
+        "runtime": {
+          "lib/net45/PCLStorage.Abstractions.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          },
+          "lib/net45/PCLStorage.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -67,7 +105,7 @@
       "SkiaSharp.Views.Forms/1.68.1.1": {
         "dependencies": {
           "SkiaSharp": "1.68.1.1",
-          "Xamarin.Forms": "4.7.0.1179"
+          "Xamarin.Forms": "4.7.0.1260"
         }
       },
       "sqlite-net-pcl/1.7.335": {
@@ -293,19 +331,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.7.0.1179": {
+      "Xamarin.Forms/4.7.0.1260": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.474"
+            "fileVersion": "4.7.0.486"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.474"
+            "fileVersion": "4.7.0.486"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.7.0.474"
+            "fileVersion": "4.7.0.486"
           }
         }
       },
@@ -332,12 +370,33 @@
       "path": "magicgradients/1.1.0",
       "hashPath": "magicgradients.1.1.0.nupkg.sha512"
     },
-    "MarcTron.Admob/1.5.6": {
+    "MarcTron.Admob/1.5.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HD9caGPx865jUHc634nGb425tyJL73svkMWwg+q6iMSLXzWhfOPDQz3VrSSK4fxv0C1MFh148PYMRinxydBNFA==",
-      "path": "marctron.admob/1.5.6",
-      "hashPath": "marctron.admob.1.5.6.nupkg.sha512"
+      "sha512": "sha512-Dx9Xc8+xrZnF74ojE4SVkUxfsqIDroMmVlly3Q6gU/j4vPdc13oRelOMLLLfd3JrbWlec33tySYT1IXaqfwMRQ==",
+      "path": "marctron.admob/1.5.7",
+      "hashPath": "marctron.admob.1.5.7.nupkg.sha512"
+    },
+    "Microsoft.Bcl/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gQU52SY/AyzDhJ2HWGD1ieEbZgofkyhMKtKVyF33FokHfmESXh+9F6E+CdZ6/XlXEQMa+fqBdXBrKQeuM8X9nA==",
+      "path": "microsoft.bcl/1.1.6",
+      "hashPath": "microsoft.bcl.1.1.6.nupkg.sha512"
+    },
+    "Microsoft.Bcl.Async/1.0.165": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbWuEY3s7MeQROW8WH4vNKNR/6XhG+mCZsDdOlXygNsZzMX98dt2Z64WhOSL22dN9AK9m8dipnvoK+m3CujMuw==",
+      "path": "microsoft.bcl.async/1.0.165",
+      "hashPath": "microsoft.bcl.async.1.0.165.nupkg.sha512"
+    },
+    "Microsoft.Bcl.Build/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JpazBBc/JT6o76Gx2q3mxJlGHfv2gK+GTzaJ+PZjf2XNGQOcajNU4PKJqc0udRwmPunZP5GrMhiWUuDVkabh+A==",
+      "path": "microsoft.bcl.build/1.0.10",
+      "hashPath": "microsoft.bcl.build.1.0.10.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -359,6 +418,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "PCLStorage/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9If+1ZFCk3QaT/asfiL+J9FMnx2CTMrLCU8tDMUOI/aCGWGWl9vJ1/KcMkjf92op23ZknenvYJZBLDAqE3sFlg==",
+      "path": "pclstorage/1.0.2",
+      "hashPath": "pclstorage.1.0.2.nupkg.sha512"
     },
     "SkiaSharp/1.68.1.1": {
       "type": "package",
@@ -549,12 +615,12 @@
       "path": "xamarin.essentials/1.5.3.2",
       "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.7.0.1179": {
+    "Xamarin.Forms/4.7.0.1260": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QY/wwwG/OTOK9UGUalL4u3fKDQ5bh86nVa+M8bmKCq8/QdgZSXRQ/YVwDh0Mew0MaKsZZwTZUNGOGRc52fb+/Q==",
-      "path": "xamarin.forms/4.7.0.1179",
-      "hashPath": "xamarin.forms.4.7.0.1179.nupkg.sha512"
+      "sha512": "sha512-FaMer4CuFMF7UT5bGHVhSgjuKFNAXVeGCc+KwTi/VbNUPRNRjyTcJW0N5BAEBMFYbT7wt/pVYevQS3v96STuyw==",
+      "path": "xamarin.forms/4.7.0.1260",
+      "hashPath": "xamarin.forms.4.7.0.1260.nupkg.sha512"
     },
     "Mono.Android/0.0.0.0": {
       "type": "reference",

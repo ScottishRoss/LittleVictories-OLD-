@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
   <item>
     <color android:color="#8759D7"/>
   </item>
   <item>
-    <bitmap
-      android:src="@drawable/LV_Vector"
+    <bitmap 
+      android:src="@mipmap/LV"
       android:tileMode="disabled"
-      android:gravity="center" />
+      android:gravity="center"/>
   </item>
 </layer-list>

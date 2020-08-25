@@ -87,14 +87,10 @@
 
             <Button Text="Delete Victory" 
                     Grid.Row="1" 
-                    HeightRequest="75"
                     Grid.ColumnSpan="2" 
-                    x:Name="saveButton" 
-                    BackgroundColor="Red" 
-                    TextColor="White" 
+                    x:Name="deleteButton"  
                     Clicked="OnDeleteButtonClicked"
-                    FontSize="Large"
-                    FontFamily="{StaticResource MontSerrat}"/>
+                    Style="{StaticResource BtnDelete}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
