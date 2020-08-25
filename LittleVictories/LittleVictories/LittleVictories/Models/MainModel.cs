@@ -7,10 +7,8 @@ namespace LittleVictories.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        [MaxLength(34)]
         public string Title { get; set; }
         public string Quick { get; set; }
-        [MaxLength(140)]
         public string Details { get; set; }
         public DateTime Date { get; set; }
     }

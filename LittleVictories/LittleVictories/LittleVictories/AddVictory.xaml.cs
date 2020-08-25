@@ -21,10 +21,13 @@ namespace LittleVictories
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
 
+            var selectedQuickVictory = quickPicker.SelectedItem as QuickVictories;
+            var quickVictory = selectedQuickVictory.Desc;
+
             var victory = new TheVictory()
             {
-                Title = title.Text ?? "No title",
-                Quick = (string)quickPicker.SelectedItem ?? "N/A",
+                Title = title.Text ?? quickVictory ?? "No title",
+                Quick = quickVictory ?? "N/A",
                 Details = details.Text ?? "No details were entered.",
                 Date = DateTime.UtcNow
             };

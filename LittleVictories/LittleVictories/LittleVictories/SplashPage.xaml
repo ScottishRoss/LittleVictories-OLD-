@@ -3,7 +3,8 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
-    x:Class="LittleVictories.SplashPage">
+    x:Class="LittleVictories.SplashPage"
+    BackgroundColor="#8759D7">
     <ContentPage.Content>
         <Grid>
             <Image x:Name="SplashIcon"
