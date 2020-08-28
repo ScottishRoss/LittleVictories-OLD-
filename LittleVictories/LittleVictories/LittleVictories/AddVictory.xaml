@@ -50,39 +50,28 @@
                                    FontAttributes="Bold"
                                    TextColor="{StaticResource TitleFontColour}"
                                    FontFamily="{StaticResource MontSerrat}"/>
-                            <Picker x:Name="quick" 
+                            <Picker x:Name="quickPicker" 
                                     Title="- Select -"
                                     TitleColor="White"
                                     HorizontalOptions="FillAndExpand"
                                     TextColor="#8759D7"
-                                    FontFamily="{StaticResource MontSerrat}">
-                                <Picker.Items>
-                                    <x:String>Took a shower</x:String>
-                                    <x:String>Paid a bill</x:String>
-                                    <x:String>Went for a walk</x:String>
-                                    <x:String>Ate a meal</x:String>
-                                    <x:String>Socialised</x:String>
-                                    <x:String>Enjoyed a hobby</x:String>
-                                    <x:String>Exercised</x:String>
-                                    <x:String>Did some housework</x:String>
-                                    <x:String>Smiled/Laughed</x:String>
-                                    <x:String>Other (Enter details below)</x:String>
-                                </Picker.Items>
+                                    FontFamily="{StaticResource MontSerrat}"
+                                    ItemDisplayBinding="{Binding Desc}"
+                                    SelectedItem="{Binding SelectedDesc}">
                             </Picker>
-
                         </StackLayout>
                     </ViewCell>
                 </TableSection>
 
                 <TableSection>
-                <ViewCell>
-                    <StackLayout Padding="15">
-                        <Label Text="Victory Details"
+                    <ViewCell>
+                        <StackLayout Padding="15">
+                            <Label Text="Victory Details"
                                FontSize="Subtitle"
                                FontAttributes="Bold"
                                TextColor="{StaticResource TitleFontColour}"
                                FontFamily="{StaticResource MontSerrat}"/>
-                        <Editor x:Name="details" 
+                            <Editor x:Name="details" 
                                 VerticalOptions="FillAndExpand"
                                 HeightRequest="200"
                                 AutoSize="TextChanges"
@@ -90,8 +79,8 @@
                                 MaxLength="140"
                                 FontFamily="{StaticResource MontSerrat}"/>
                         </StackLayout>
-                </ViewCell>
-            </TableSection>
+                    </ViewCell>
+                </TableSection>
             </TableView>
 
             <Button Text="Save your Victory" 

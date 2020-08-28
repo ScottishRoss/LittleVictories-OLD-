@@ -8,6 +8,8 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\AddVictory.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\Preferences.xaml.g.cs
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\PreferencesQuick.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\SplashPage.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\ViewVictory.xaml.g.cs
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\YourVictories.xaml.g.cs

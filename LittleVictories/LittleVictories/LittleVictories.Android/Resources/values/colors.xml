@@ -4,6 +4,6 @@
   <color name="primary">#8759D7</color>
   <color name="launcher_background">#8759D7</color>
   <color name="primaryDark">@android:color/transparent</color>
-  <color name="window_background">#F5F5F5</color>
-  <color name="splash_background">#FFFFFF</color>
+  <color name="window_background">#8759D7</color>
+  <color name="splash_background">#8759D7</color>
 </resources>

@@ -26,7 +26,7 @@ namespace LittleVictories
 
             // animate the splash logo
             await SplashIcon.ScaleTo(0.5, 500, Easing.CubicInOut);
-            var animationTasks = new[]{
+            var animationTasks = new[]{ 
                 SplashIcon.ScaleTo(100.0, 1000, Easing.CubicInOut),
                 SplashIcon.FadeTo(0, 700, Easing.CubicInOut)
             };

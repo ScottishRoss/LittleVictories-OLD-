@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleVictories.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleVictories.iOS", "LittleVictories\LittleVictories.iOS\LittleVictories.iOS.csproj", "{ACDEB595-23E1-4106-AFBE-C9349E9E8DA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleVictories", "LittleVictories\LittleVictories\LittleVictories.csproj", "{FA9D34CF-9BF6-425D-A100-13FE45547ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleVictories", "LittleVictories\LittleVictories\LittleVictories.csproj", "{FA9D34CF-9BF6-425D-A100-13FE45547ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

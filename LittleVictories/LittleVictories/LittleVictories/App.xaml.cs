@@ -1,4 +1,5 @@
 ﻿using LittleVictories.Data;
+using PCLStorage;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -13,21 +14,44 @@ namespace LittleVictories
         {
             get
             {
-                return database ?? (database = new LittleVictoriesDatabase(Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "LittleVictories.db3")));
+                try
+                {
+                    if (database == null)
+                    {
+                        var dbName = "LittleVictories.db3";
+                        var sqliteFilename = "LittleVictories.db3";
+
+                        IFolder folder = FileSystem.Current.LocalStorage;
+                        string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
+                        database = new LittleVictoriesDatabase(Path.Combine(path));
+                    }
+                return database;
+                }
+                catch (Exception ex)
+                {
+                    var dbName = "LittleVictories.db3";
+                    var sqliteFilename = "LittleVictories.db3";
+
+                    IFolder folder = FileSystem.Current.LocalStorage;
+                    string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
+                    Directory.CreateDirectory(path);
+                    database = new LittleVictoriesDatabase(Path.Combine(path));
+                }
+            return database;
             }
         }
+           
         public App()
         {
-            InitializeComponent();
             var splashPage = new NavigationPage(new SplashPage());
             MainPage = splashPage;
+
+            InitializeComponent();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            
         }
 
         protected override void OnSleep()

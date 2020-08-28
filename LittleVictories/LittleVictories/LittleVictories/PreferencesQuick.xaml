@@ -1,7 +1,7 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             x:Class="LittleVictories.YourVictories"
+             x:Class="LittleVictories.PreferencesQuick"
              ios:Page.UseSafeArea="true"
              NavigationPage.HasNavigationBar="False"
              ControlTemplate="{StaticResource PageWithGradient}">
@@ -10,44 +10,49 @@
         <StackLayout Spacing="0" 
                      VerticalOptions="StartAndExpand" 
                      HorizontalOptions="StartAndExpand">
-            <Image Source="LVMain"
+            <Label Text="Manage your Quick Victories here"
+                   FontSize="Title"
+                   FontFamily="{StaticResource MontSerrat}"
+                   TextColor="White"
                    VerticalOptions="StartAndExpand"
-                   Margin="10, 30, 10, 0"
-                   HorizontalOptions="CenterAndExpand"/>
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   Margin="20,40,20, 0"/>
+
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
                    Margin="43,0"
                    FontFamily="{StaticResource MontSerrat}"
                    FontSize="Title"
-                   HorizontalTextAlignment="Center">Celebrate a Victory and see them all here!</Label>
-            <ListView x:Name="VictoryListView"
-                      ItemSelected="OnListViewItemSelected"
-                      Margin="20,0"
+                   HorizontalTextAlignment="Center">Oh no! It seems there are no Quick Victories in here. You can add one by clicking "Add Quick Victory" below.</Label>
+            <ListView x:Name="QuickVictoriesListView"
+                      Margin="20,20"
                       VerticalOptions="StartAndExpand"
-                      HasUnevenRows="True">
+                      ItemSelected="OnQVListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <ViewCell >
                             <StackLayout Orientation="Vertical" 
                                          HorizontalOptions="FillAndExpand"
                                          Margin="20,0">
-                                <Label Text="{Binding Title}"
+                                <Label Text="{Binding Desc}"
                                        FontFamily="{StaticResource MontSerrat}"
                                        FontSize="Medium"
                                        FontAttributes="Bold"
-                                       HeightRequest="25"/>
-                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}"
-                                       FontFamily="{StaticResource MontSerrat}"
-                                       FontSize="Small"
-                                       FontAttributes="Italic"
-                                       HeightRequest="25"/>
+                                       HeightRequest="40"
+                                       HorizontalOptions="CenterAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
+            <Button Text="Add Quick Victory" 
+                    x:Name="addQVButton"  
+                    Clicked="OnAddQuickVictoryClicked"
+                    Style="{StaticResource BtnAdd}" />
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
