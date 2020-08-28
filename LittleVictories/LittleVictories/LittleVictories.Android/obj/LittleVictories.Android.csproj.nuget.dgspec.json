@@ -44,7 +44,7 @@
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.1.1, )"
             },
             "MarcTron.Admob": {
               "target": "Package",
@@ -56,7 +56,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.1260, )"
+              "version": "[4.8.0.1269, )"
             }
           }
         }
@@ -102,7 +102,7 @@
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.1.1, )"
             },
             "MarcTron.Admob": {
               "target": "Package",
@@ -124,7 +124,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.1260, )"
+              "version": "[4.8.0.1269, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

@@ -24,7 +24,6 @@ namespace LittleVictories.Data
         }
         public Task<List<QuickVictories>> GetQuickVictoriesAsync()
         {
-            //return _database.QueryAsync<QuickVictories>("select Desc from QuickVictories order by case when DisplaySeq is null then 0 else 1 end, DisplaySeq");
             return _database.Table<QuickVictories>().OrderByDescending(x => x.DisplaySeq).ToListAsync();
         }
         public Task<List<TheVictory>> GetVictoriesAsync()

@@ -39,7 +39,7 @@ namespace LittleVictories
 
                 bool answer = await DisplayAlert(
                     "Delete Confirmation",
-                        "Are you sure you want to delete your Victory?",
+                        "Are you sure you want to delete this Quick Victory?",
                         "Yes",
                         "No"
                     );

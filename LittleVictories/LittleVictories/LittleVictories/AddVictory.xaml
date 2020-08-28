@@ -59,7 +59,6 @@
                                     ItemDisplayBinding="{Binding Desc}"
                                     SelectedItem="{Binding SelectedDesc}">
                             </Picker>
-
                         </StackLayout>
                     </ViewCell>
                 </TableSection>

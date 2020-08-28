@@ -8,9 +8,7 @@
              ControlTemplate="{StaticResource PageWithGradient}">
     <ContentPage.Content>
 
-        <StackLayout Spacing="0" 
-                     VerticalOptions="StartAndExpand" 
-                     HorizontalOptions="StartAndExpand">
+        <StackLayout Spacing="0">
             <Image Source="LVMain"
                    VerticalOptions="StartAndExpand"
                    Margin="10,50"
@@ -22,13 +20,14 @@
                     Clicked="OnQuickVictoriesClicked" 
                     VerticalOptions="StartAndExpand"/>
 
-            <controls:MTAdView x:Name="myAds" IsVisible="true" VerticalOptions="EndAndExpand" 
+            <controls:MTAdView x:Name="myAds" 
+                               IsVisible="true" 
+                               VerticalOptions="EndAndExpand" 
                                AdsId="{OnPlatform Android='ca-app-pub-7100257291492276/9917181683'}">
                 <controls:MTAdView.HeightRequest>
                     <x:OnIdiom>
-                        <x:OnIdiom.Phone>50</x:OnIdiom.Phone>
-                        <x:OnIdiom.Tablet>90</x:OnIdiom.Tablet>
-                        <x:OnIdiom.Desktop>90</x:OnIdiom.Desktop>
+                        <x:OnIdiom.Phone>100</x:OnIdiom.Phone>
+                        <x:OnIdiom.Tablet>200</x:OnIdiom.Tablet>
                     </x:OnIdiom>
                 </controls:MTAdView.HeightRequest>
             </controls:MTAdView>

@@ -10,6 +10,16 @@
         <StackLayout Spacing="0" 
                      VerticalOptions="StartAndExpand" 
                      HorizontalOptions="StartAndExpand">
+            <Label Text="Manage your Quick Victories here"
+                   FontSize="Title"
+                   FontFamily="{StaticResource MontSerrat}"
+                   TextColor="White"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   Margin="20,40,20, 0"/>
+
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
@@ -18,7 +28,7 @@
                    FontSize="Title"
                    HorizontalTextAlignment="Center">Oh no! It seems there are no Quick Victories in here. You can add one by clicking "Add Quick Victory" below.</Label>
             <ListView x:Name="QuickVictoriesListView"
-                      Margin="20,75"
+                      Margin="20,20"
                       VerticalOptions="StartAndExpand"
                       ItemSelected="OnQVListViewItemSelected">
                 <ListView.ItemTemplate>

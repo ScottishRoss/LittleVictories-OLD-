@@ -4208,6 +4208,7 @@ namespace LittleVictories.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.fab_transformation_sheet_behavior = global::LittleVictories.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.hide_bottom_view_on_scroll_behavior = global::LittleVictories.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.mtrl_chip_close_icon_content_description = global::LittleVictories.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.overflow_tab_title = global::LittleVictories.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::LittleVictories.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::LittleVictories.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::LittleVictories.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -6886,6 +6887,7 @@ namespace LittleVictories.Droid
 			global::Xamarin.Forms.Platform.Resource.String.fab_transformation_sheet_behavior = global::LittleVictories.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.hide_bottom_view_on_scroll_behavior = global::LittleVictories.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.mtrl_chip_close_icon_content_description = global::LittleVictories.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Resource.String.overflow_tab_title = global::LittleVictories.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Resource.String.password_toggle_content_description = global::LittleVictories.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye = global::LittleVictories.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye_mask_strike_through = global::LittleVictories.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -12606,25 +12608,28 @@ namespace LittleVictories.Droid
 			public const int mtrl_chip_close_icon_content_description = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int password_toggle_content_description = 2131558438;
+			public const int overflow_tab_title = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int path_password_eye = 2131558439;
+			public const int password_toggle_content_description = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int path_password_eye_mask_strike_through = 2131558440;
+			public const int path_password_eye = 2131558440;
 			
 			// aapt resource value: 0x7F0D0029
-			public const int path_password_eye_mask_visible = 2131558441;
+			public const int path_password_eye_mask_strike_through = 2131558441;
 			
 			// aapt resource value: 0x7F0D002A
-			public const int path_password_strike_through = 2131558442;
+			public const int path_password_eye_mask_visible = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int search_menu_title = 2131558443;
+			public const int path_password_strike_through = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int status_bar_notification_info_overflow = 2131558444;
+			public const int search_menu_title = 2131558444;
+			
+			// aapt resource value: 0x7F0D002D
+			public const int status_bar_notification_info_overflow = 2131558445;
 			
 			static String()
 			{
