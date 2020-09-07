@@ -1,8 +1,6 @@
 ﻿using LittleVictories.Models;
 using SQLite;
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 
 namespace LittleVictories.Data
@@ -13,10 +11,8 @@ namespace LittleVictories.Data
 
         public LittleVictoriesDatabase(string dbPath)
         {
-
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<TheVictory>().Wait();
-
         }
         public Task<List<QuickVictories>> GetQuickVictoriesEditableAsync()
         {
