@@ -9,7 +9,6 @@ namespace LittleVictories
         public AddVictory()
         {
             InitializeComponent();   
-
         }
         protected override async void OnAppearing()
         {

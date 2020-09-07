@@ -7,11 +7,11 @@
              NavigationPage.HasNavigationBar="False"
              ControlTemplate="{StaticResource PageWithGradient}">
     <ContentPage.Content>
-
+        
         <StackLayout Spacing="0">
             <Image Source="LVMain"
                    VerticalOptions="StartAndExpand"
-                   Margin="10,50"
+                   Margin="10, 25, 10, 25"
                    HorizontalOptions="CenterAndExpand"/>
 
             <Button Text="Quick Victories"
@@ -31,6 +31,7 @@
                     </x:OnIdiom>
                 </controls:MTAdView.HeightRequest>
             </controls:MTAdView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
