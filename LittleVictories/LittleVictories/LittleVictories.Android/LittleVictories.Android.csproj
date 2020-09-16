@@ -37,6 +37,8 @@
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidDexTool>d8</AndroidDexTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -195,7 +197,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionLittleVictoriesAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionLittleVictoriesAndroidHideInfoBar="True" />
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionLittleVictoriesAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionLittleVictoriesAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -11,7 +11,7 @@
         <StackLayout Spacing="0">
             <Image Source="LVMain"
                    VerticalOptions="StartAndExpand"
-                   Margin="10, 25, 10, 25"
+                   Margin="10, 55, 10, 25"
                    HorizontalOptions="CenterAndExpand"/>
 
             <Button Text="Quick Victories"
