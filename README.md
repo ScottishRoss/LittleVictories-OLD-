@@ -11,10 +11,11 @@
     <img src="https://github.com/ScottishRoss/LittleVictories/blob/master/Images/LV%20Big.png?raw=true" alt="Logo" width="500" height="250">
   </a>
   
-<a align="center" href='https://play.google.com/store/apps/details?id=rphenderson.dev.littlevictories&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="width: 200px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a align="center" href='https://play.google.com/store/apps/details?id=rphenderson.dev.littlevictories&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="max-width: 250px !important;" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
   <p align="center">
     Everyday life is full of Little Victories, the small steps that we don't always celebrate as we should. We look to the big wins and we judge ourselves by achieving     milestones, rather than congratulating ourselves for small moments of progress towards our goals.
+  
     ·
     <a href="https://github.com/scottishross/LittleVictories/issues">Report Bug</a>
     ·
@@ -29,17 +30,11 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -72,11 +67,10 @@ This app was developed utilising my experiences with Cognitive Behavioural Thera
 
 See the [open issues](https://github.com/scottishross/littlevictories/issues) for a list of proposed features (and known issues).
 
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome, but please read through [CONTRIBUTE.md](https://github.com/ScottishRoss/LittleVictories/blob/master/CONTRIBUTE.md)
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
