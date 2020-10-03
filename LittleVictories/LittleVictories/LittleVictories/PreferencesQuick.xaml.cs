@@ -56,7 +56,6 @@ namespace LittleVictories
 
             }
         }
-
         async void OnAddQuickVictoryClicked(object sender, System.EventArgs e)
         {
             string desc = await DisplayPromptAsync("Add Quick Victory", "Enter the Quick Victory here.");

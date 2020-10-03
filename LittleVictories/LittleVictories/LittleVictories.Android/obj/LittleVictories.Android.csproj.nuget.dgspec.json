@@ -48,7 +48,7 @@
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.7, )"
+              "version": "[1.5.8, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -56,7 +56,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1269, )"
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
             }
           }
         }
@@ -88,7 +92,6 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -100,7 +103,6 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
@@ -108,7 +110,7 @@
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.7, )"
+              "version": "[1.5.8, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -126,7 +128,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1269, )"
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -143,7 +149,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

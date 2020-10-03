@@ -15,7 +15,7 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.7": {
+      "MarcTron.Admob/1.5.8": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.1.0.1",
@@ -1611,7 +1611,7 @@
           "lib/monoandroid10.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1269": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Browser": "1.0.0.1",
@@ -1636,6 +1636,22 @@
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.1.0.1",
+          "Xamarin.Google.Android.Material": "1.0.0.1"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Xamarin.Forms.Material.dll": {}
+        },
+        "build": {
+          "buildTransitive/MonoAndroid10/Xamarin.Forms.Visual.Material.targets": {}
         }
       },
       "Xamarin.Google.Android.Material/1.0.0.1": {
@@ -1766,10 +1782,11 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MagicGradients": "1.1.1",
-          "MarcTron.Admob": "1.5.7",
+          "MarcTron.Admob": "1.5.8",
           "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1269",
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1451",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1796,10 +1813,10 @@
         "magicgradients.nuspec"
       ]
     },
-    "MarcTron.Admob/1.5.7": {
-      "sha512": "Dx9Xc8+xrZnF74ojE4SVkUxfsqIDroMmVlly3Q6gU/j4vPdc13oRelOMLLLfd3JrbWlec33tySYT1IXaqfwMRQ==",
+    "MarcTron.Admob/1.5.8": {
+      "sha512": "+umL/J+BYSuX72GpSIF43iS0YeqdbVm7eQ0NikGdjyovkwu/ZmceXKC6HsmfSkZPFbDIPWYhSoLEBAdkHtt1Tw==",
       "type": "package",
-      "path": "marctron.admob/1.5.7",
+      "path": "marctron.admob/1.5.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1810,7 +1827,7 @@
         "lib/uap10.0.18362/Plugin.MtAdmob.dll",
         "lib/uap10.0.18362/Plugin.MtAdmob.pri",
         "lib/xamarinios10/Plugin.MtAdmob.dll",
-        "marctron.admob.1.5.7.nupkg.sha512",
+        "marctron.admob.1.5.8.nupkg.sha512",
         "marctron.admob.nuspec",
         "readme.txt"
       ]
@@ -3483,10 +3500,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1269": {
-      "sha512": "3UFTlfJvF9l8HB+gWVmYUEVRSPU+c3H0G/h09RVG8/P5i/QRiDBg/YHEGfPR3HNuWlJ9S9TgZjrFruTUS1ZYiQ==",
+    "Xamarin.Forms/4.8.0.1451": {
+      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1269",
+      "path": "xamarin.forms/4.8.0.1451",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3752,6 +3769,7 @@
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
@@ -3784,6 +3802,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
@@ -3793,8 +3812,32 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1269.nupkg.sha512",
+        "xamarin.forms.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "sha512": "QLei1etT+z8jpYOnkSlt4JiCyjSoXImVEc7sE0X33lYTOScaiECbNk2EyZ5fP7EkiB2IFYvVHRVR1rNnBL+e1g==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.8.0.1451",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "buildTransitive/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.pdb",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
       ]
     },
     "Xamarin.Google.Android.Material/1.0.0.1": {
@@ -3900,9 +3943,10 @@
     "MonoAndroid,Version=v10.0": [
       "LittleVictories >= 1.0.0",
       "MagicGradients >= 1.1.1",
-      "MarcTron.Admob >= 1.5.7",
+      "MarcTron.Admob >= 1.5.8",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1269"
+      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1451"
     ]
   },
   "packageFolders": {
@@ -3953,7 +3997,7 @@
           },
           "MarcTron.Admob": {
             "target": "Package",
-            "version": "[1.5.7, )"
+            "version": "[1.5.8, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -3961,7 +4005,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1269, )"
+            "version": "[4.8.0.1451, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[4.8.0.1451, )"
           }
         }
       }
