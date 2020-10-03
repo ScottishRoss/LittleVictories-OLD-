@@ -14,14 +14,14 @@
 <a align="center" href='https://play.google.com/store/apps/details?id=rphenderson.dev.littlevictories&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="max-width: 250px !important;" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
   <p align="center">
-    Everyday life is full of Little Victories, the small steps that we don't always celebrate as we should. We look to the big wins and we judge ourselves by achieving     milestones, rather than congratulating ourselves for small moments of progress towards our goals.
-  
+    Everyday life is full of Little Victories, the small steps that we don't always celebrate as we should. We look to the big wins and we judge ourselves by achieving milestones, rather than congratulating ourselves for small moments of progress towards our goals.
+    <br />
+    <br />
     ·
-    <a href="https://github.com/scottishross/LittleVictories/issues">Report Bug</a>
+    <a href="https://github.com/scottishross/littlevictories/issues">Report Bug</a>
     ·
-    <a href="https://github.com/scottishross/LittleVictories/issues">Request Feature</a>
+    <a href="https://github.com/scottishross/littlevictories/issues">Request Feature</a>
   </p>
-</p>
 
 
 
