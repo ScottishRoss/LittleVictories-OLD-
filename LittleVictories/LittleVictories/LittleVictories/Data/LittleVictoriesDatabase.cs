@@ -29,14 +29,7 @@ namespace LittleVictories.Data
 
         public Task<int> SaveVictoryAsync(TheVictory victory)
         {
-            if (victory.Id != 0)
-            {
-                return _database.UpdateAsync(victory);
-            }
-            else
-            {
-                return _database.InsertAsync(victory);
-            }
+            return victory.Id != 0 ? _database.UpdateAsync(victory) : _database.InsertAsync(victory);
         }
 
         public Task<int> DeleteVictoryAsync(TheVictory victory)
@@ -46,14 +39,7 @@ namespace LittleVictories.Data
 
         public Task<int> SaveQuickVictoryAsync (QuickVictories quickVictories)
         {
-            if (quickVictories.Id != 0)
-            {
-                return _database.UpdateAsync(quickVictories);
-            }
-            else
-            {
-                return _database.InsertAsync(quickVictories);
-            }
+            return quickVictories.Id != 0 ? _database.UpdateAsync(quickVictories) : _database.InsertAsync(quickVictories);
         }
         public Task<int> DeleteQuickVictoryAsync(QuickVictories quickVictories)
         {

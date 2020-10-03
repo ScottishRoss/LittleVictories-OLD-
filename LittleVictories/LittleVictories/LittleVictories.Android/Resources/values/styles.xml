@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
-  <style name="MainTheme" parent="MainTheme.Base">
-  </style>
-  <!-- Base theme applied no matter what API -->
-  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
-    <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="windowNoTitle">true</item>
-    <!-- Enforce buttons to not be full caps -->
-    <item name="android:textAllCaps">false</item>
-    <!--We will be using the toolbar so no need to show ActionBar-->
-    <item name="windowActionBar">false</item>
-    <!-- Set theme colors from https://aka.ms/material-colors -->
-    <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">@color/primary</item>
-
-    <!-- colorPrimaryDark is used for the status bar -->
-    <!--<item name="colorPrimaryDark">#FF4081</item>-->
-    <!-- So instead make it translucent. -->
+    <item name="android:textAllCaps">false</item> <!-- Enforce buttons to not be full caps -->
+    <item name="windowActionBar">false</item> <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="colorPrimary">@color/primary</item><!-- colorPrimary is used for the default action bar background -->
+    <item name="android:windowBackground">@color/window_background</item>
     <item name="android:windowTranslucentStatus">true</item>
-
-    <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets -->
     <item name="colorAccent">@color/primary</item>
-    <item name="android:colorActivatedHighlight">@android:color/transparent</item>
-    <!-- You can also set colorControlNormal, colorControlActivated
-         colorControlHighlight and colorSwitchThumbNormal. -->
+    <item name="android:windowDisablePreview">true</item>
+    <item name="android:colorActivatedHighlight">@android:color/transparent</item>>
     <item name="windowActionModeOverlay">true</item>
-
-    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
-  </style>
-
-  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-    <item name="colorAccent">@color/primary</item>
-  </style>
-
-  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
-  </style>
-
-  <style name="MyTheme" parent="MyTheme.Base">
   </style>
 
   <style name="SplashTheme" parent ="Theme.AppCompat.Light.NoActionBar">
     <item name="android:windowBackground">@drawable/splash_screen</item>
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
+    <item name="android:windowAnimationStyle">@null</item>
   </style>
+
 </resources>

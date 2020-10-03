@@ -7,7 +7,6 @@
              NavigationPage.HasNavigationBar="False"
              ControlTemplate="{StaticResource PageWithGradient}">
     <ContentPage.Content>
-
         <StackLayout Spacing="0">
             <Image Source="LVMain"
                    VerticalOptions="StartAndExpand"
@@ -38,6 +37,18 @@
                     </x:OnIdiom>
                 </controls:MTAdView.HeightRequest>
             </controls:MTAdView>
+
+            <Grid x:Name="SplashGrid" BackgroundColor="{StaticResource BackgroundColour}">
+                <Image x:Name="Logo" Source="lv" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image.TranslationY>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="iOS">0</On>
+                            <On Platform="Android">-12</On>
+                        </OnPlatform>
+                    </Image.TranslationY>
+                </Image>
+            </Grid>
+
            
         </StackLayout>
     </ContentPage.Content>
