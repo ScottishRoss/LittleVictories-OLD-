@@ -1,3 +1,4 @@
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/ScottishRoss/LittleVictories/total?style=for-the-badge)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ScottishRoss/LittleVictories?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ScottishRoss/Littlevictories?style=for-the-badge)
@@ -10,8 +11,6 @@
   <a href="https://github.com/ScottishRoss/LittleVictories">
     <img src="https://github.com/ScottishRoss/LittleVictories/blob/master/Images/LV%20Big.png?raw=true" alt="Logo" width="500" height="250">
   </a>
-  
-<a align="center" href='https://play.google.com/store/apps/details?id=rphenderson.dev.littlevictories&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="max-width: 250px !important;" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
   <p align="center">
     Everyday life is full of Little Victories, the small steps that we don't always celebrate as we should. We look to the big wins and we judge ourselves by achieving milestones, rather than congratulating ourselves for small moments of progress towards our goals.
