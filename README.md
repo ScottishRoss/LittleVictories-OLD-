@@ -22,6 +22,11 @@
     <a href="https://github.com/scottishross/littlevictories/issues">Request Feature</a>
   </p>
 
+<p align="center">
+      <a href='https://play.google.com/store/apps/details?id=rphenderson.dev.littlevictories'>
+        <img alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png'/>
+      </a>
+    </p>
 
 
 <!-- TABLE OF CONTENTS -->
