@@ -11,14 +11,6 @@ namespace LittleVictories
             InitializeComponent();
         }
 
-        async void OnEditButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddVictory()
-            {
-                BindingContext = new TheVictory()
-            });
-        }
-
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             bool answer = await DisplayAlert(

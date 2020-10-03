@@ -8,7 +8,7 @@ namespace LittleVictories
 {
     public partial class App : Application
     {
-        static LittleVictoriesDatabase database;
+        static LittleVictoriesDatabase _database;
 
         public static LittleVictoriesDatabase Database
         {
@@ -16,37 +16,34 @@ namespace LittleVictories
             {
                 try
                 {
-                    if (database == null)
+                    if (_database == null)
                     {
                         var dbName = "LittleVictories.db3";
                         var sqliteFilename = "LittleVictories.db3";
 
                         IFolder folder = FileSystem.Current.LocalStorage;
-                        string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
-                        database = new LittleVictoriesDatabase(Path.Combine(path));
+                        var path = PortablePath.Combine(folder.Path, sqliteFilename);
+                        _database = new LittleVictoriesDatabase(Path.Combine(path));
                     }
-                return database;
+                    return _database;
                 }
                 catch (Exception ex)
                 {
-                    var dbName = "LittleVictories.db3";
                     var sqliteFilename = "LittleVictories.db3";
 
                     IFolder folder = FileSystem.Current.LocalStorage;
-                    string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
+                    var path = PortablePath.Combine(folder.Path, sqliteFilename);
                     Directory.CreateDirectory(path);
-                    database = new LittleVictoriesDatabase(Path.Combine(path));
+                    _database = new LittleVictoriesDatabase(Path.Combine(path));
                 }
-            return database;
+                return _database;
             }
         }
            
         public App()
         {
-            var splashPage = new NavigationPage(new SplashPage());
-            MainPage = splashPage;
-
             InitializeComponent();
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

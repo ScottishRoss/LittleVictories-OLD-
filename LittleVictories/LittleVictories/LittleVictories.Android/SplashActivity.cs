@@ -1,8 +1,8 @@
 ﻿using Android.App;
 using Android.Content;
-using Android.OS;
 using AndroidX.AppCompat.App;
 using System.Threading.Tasks;
+using Android.OS;
 
 namespace LittleVictories.Droid
 
@@ -12,27 +12,19 @@ namespace LittleVictories.Droid
     {
         static readonly string TAG = "X:" + nameof(SplashActivity);
 
-        public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState, persistentState);
+            base.OnCreate(savedInstanceState);
+            StartActivity(typeof(MainActivity));
+            Finish();
+            OverridePendingTransition(0, 0);
         }
 
-        // Launches the startup task
         protected override void OnResume()
         {
-            base.OnResume();
-            Task startupWork = new Task(() => { SimulateStartup(); });
-            startupWork.Start();
         }
 
         // Prevent the back button from canceling the startup process
         public override void OnBackPressed() { }
-
-        // Simulates background work that happens behind the splash screen
-        async void SimulateStartup()
-        {
-            await Task.Delay(1000); // Simulate a bit of startup work.
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
-        }
     }
 }

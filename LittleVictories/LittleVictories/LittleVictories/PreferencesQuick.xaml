@@ -9,7 +9,8 @@
 
         <StackLayout Spacing="0" 
                      VerticalOptions="StartAndExpand" 
-                     HorizontalOptions="StartAndExpand">
+                     HorizontalOptions="StartAndExpand"
+                     Margin="0,25,0,0">
             <Label Text="Manage your Quick Victories here"
                    FontSize="Title"
                    FontFamily="{StaticResource MontSerrat}"
