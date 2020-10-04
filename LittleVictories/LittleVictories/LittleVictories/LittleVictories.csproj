@@ -62,6 +62,9 @@
     <EmbeddedResource Update="PreferencesQuick.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="TestNotification.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewVictory.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

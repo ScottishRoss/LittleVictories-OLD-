@@ -1,7 +1,5 @@
 ﻿using Android.App;
-using Android.Content;
 using AndroidX.AppCompat.App;
-using System.Threading.Tasks;
 using Android.OS;
 
 namespace LittleVictories.Droid
