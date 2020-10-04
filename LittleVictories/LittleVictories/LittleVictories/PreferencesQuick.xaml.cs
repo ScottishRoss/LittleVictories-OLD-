@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 
 namespace LittleVictories
 {
@@ -20,7 +21,7 @@ namespace LittleVictories
 
             QuickVictoriesListView.ItemsSource = await App.Database.GetQuickVictoriesEditableAsync();
 
-            if (((List<QuickVictories>)QuickVictoriesListView.ItemsSource).Count == 0)
+            if (((List<QuickVictories>)QuickVictoriesListView.ItemsSource).Any())
             {
                 QuickVictoriesListView.IsVisible = false;
                 EmptyMessage.IsVisible = true;
