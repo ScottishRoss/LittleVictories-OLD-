@@ -92,6 +92,6 @@ All rights remain. Contribution is allowed.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@RHenderson91](https://twitter.com/RHenderson91) - rphenderson91@gmail.com
+Ross Henderson - [@RHenderson91](https://twitter.com/RHenderson91) - rphenderson91@gmail.com
 
 Project Link: [https://github.com/ScottishRoss/LittleVictories](https://github.com/ScottishRoss/LittleVictories)
