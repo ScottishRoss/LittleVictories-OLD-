@@ -36,8 +36,8 @@ namespace LittleVictories.Droid
     
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7100257291492276~4761790441");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
+            Forms.Init(this, savedInstanceState);
+            FormsMaterial.Init(this, savedInstanceState);
             LoadApplication(new App());
             CreateNotificationFromIntent(Intent);
         }
