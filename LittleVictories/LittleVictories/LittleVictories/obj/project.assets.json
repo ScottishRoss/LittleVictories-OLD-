@@ -105,6 +105,15 @@
           "lib/net45/PCLStorage.dll": {}
         }
       },
+      "Plugin.FirebasePushNotification/3.3.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.FirebasePushNotification.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.FirebasePushNotification.dll": {}
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "dependencies": {
@@ -493,7 +502,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Forms/4.8.0.1534": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -510,10 +519,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1534"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -932,6 +941,32 @@
         "lib/wp8/PCLStorage.xml",
         "pclstorage.1.0.2.nupkg.sha512",
         "pclstorage.nuspec"
+      ]
+    },
+    "Plugin.FirebasePushNotification/3.3.10": {
+      "sha512": "m2RokQa7jCSi0SVcz42AZk4btTGJneg0l56FfwgFswQ38Xkqj4OqCRr68y9lmh6y/tjdWKKkwYZK84YsVtRa0g==",
+      "type": "package",
+      "path": "plugin.firebasepushnotification/3.3.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.dll",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.pdb",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.xml",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.dll",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.pdb",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.xml",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.dll",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.pdb",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.xml",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.dll",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.pdb",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.xml",
+        "plugin.firebasepushnotification.3.3.10.nupkg.sha512",
+        "plugin.firebasepushnotification.nuspec",
+        "readme.txt"
       ]
     },
     "SkiaSharp/1.68.1.1": {
@@ -2208,10 +2243,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1451": {
-      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
+    "Xamarin.Forms/4.8.0.1534": {
+      "sha512": "h5S4nWRBYUNgbs2FtxkSLISh2FUBdLGZ0yVR0KP8utNMTOiRUhWcLzuJf3w4NYtboWFFUx/dyqZpi+aCcIMvSg==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1451",
+      "path": "xamarin.forms/4.8.0.1534",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2520,14 +2555,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.4.8.0.1534.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Visual.Material/4.8.0.1451": {
-      "sha512": "QLei1etT+z8jpYOnkSlt4JiCyjSoXImVEc7sE0X33lYTOScaiECbNk2EyZ5fP7EkiB2IFYvVHRVR1rNnBL+e1g==",
+    "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "sha512": "2wuSSV4eFquKYmkCdQwZJgd+Z31+0A/JugzuX4IbdMNi8TpCkf5slNfwPQlrefi+wWNh919KeCyX9T7eqR7H2Q==",
       "type": "package",
-      "path": "xamarin.forms.visual.material/4.8.0.1451",
+      "path": "xamarin.forms.visual.material/4.8.0.1534",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2544,7 +2579,7 @@
         "lib/netstandard1.0/_._",
         "lib/tizen40/Xamarin.Forms.Material.dll",
         "lib/tizen40/Xamarin.Forms.Material.pdb",
-        "xamarin.forms.visual.material.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.visual.material.4.8.0.1534.nupkg.sha512",
         "xamarin.forms.visual.material.nuspec"
       ]
     }
@@ -2555,9 +2590,10 @@
       "MarcTron.Admob >= 1.5.8",
       "NETStandard.Library >= 2.0.3",
       "PCLStorage >= 1.0.2",
+      "Plugin.FirebasePushNotification >= 3.3.10",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451",
-      "Xamarin.Forms.Visual.Material >= 4.8.0.1451",
+      "Xamarin.Forms >= 4.8.0.1534",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1534",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -2621,17 +2657,21 @@
             "target": "Package",
             "version": "[1.0.2, )"
           },
+          "Plugin.FirebasePushNotification": {
+            "target": "Package",
+            "version": "[3.3.10, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1534, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1534, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

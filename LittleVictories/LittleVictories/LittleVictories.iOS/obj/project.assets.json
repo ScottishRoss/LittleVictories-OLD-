@@ -40,6 +40,23 @@
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
         }
       },
+      "Plugin.FirebasePushNotification/3.3.10": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.iOS.CloudMessaging": "4.3.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
+        }
+      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "compile": {
@@ -199,6 +216,24 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
+      "Xamarin.Firebase.iOS.CloudMessaging/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
@@ -217,7 +252,40 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Firebase.iOS.Installations/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.InstanceID/4.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        }
+      },
+      "Xamarin.Forms/4.8.0.1534": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -338,7 +406,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -385,9 +453,10 @@
           "MagicGradients": "1.1.1",
           "MarcTron.Admob": "1.5.8",
           "PCLStorage": "1.0.2",
+          "Plugin.FirebasePushNotification": "3.3.10",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1534",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -435,6 +504,23 @@
         "runtime": {
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.FirebasePushNotification/3.3.10": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.iOS.CloudMessaging": "4.3.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -574,6 +660,24 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
+      "Xamarin.Firebase.iOS.CloudMessaging/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
@@ -592,7 +696,40 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Firebase.iOS.Installations/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.InstanceID/4.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        }
+      },
+      "Xamarin.Forms/4.8.0.1534": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -713,7 +850,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -760,9 +897,10 @@
           "MagicGradients": "1.1.1",
           "MarcTron.Admob": "1.5.8",
           "PCLStorage": "1.0.2",
+          "Plugin.FirebasePushNotification": "3.3.10",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1534",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -810,6 +948,23 @@
         "runtime": {
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.FirebasePushNotification/3.3.10": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.iOS.CloudMessaging": "4.3.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -952,6 +1107,24 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
+      "Xamarin.Firebase.iOS.CloudMessaging/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
@@ -970,7 +1143,40 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Firebase.iOS.Installations/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.InstanceID/4.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        }
+      },
+      "Xamarin.Forms/4.8.0.1534": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1091,7 +1297,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -1138,9 +1344,10 @@
           "MagicGradients": "1.1.1",
           "MarcTron.Admob": "1.5.8",
           "PCLStorage": "1.0.2",
+          "Plugin.FirebasePushNotification": "3.3.10",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1534",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1188,6 +1395,23 @@
         "runtime": {
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
           "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.FirebasePushNotification/3.3.10": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.iOS.CloudMessaging": "4.3.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.FirebasePushNotification.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -1330,6 +1554,24 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
+      "Xamarin.Firebase.iOS.CloudMessaging/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1",
+          "Xamarin.Firebase.iOS.InstanceID": "4.3.3"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
+        }
+      },
       "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
@@ -1348,7 +1590,40 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Firebase.iOS.Installations/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.Installations.dll": {}
+        }
+      },
+      "Xamarin.Firebase.iOS.InstanceID/4.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.6.6",
+          "Xamarin.Firebase.iOS.Installations": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Firebase.InstanceID.dll": {}
+        }
+      },
+      "Xamarin.Forms/4.8.0.1534": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1469,7 +1744,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1451": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -1516,9 +1791,10 @@
           "MagicGradients": "1.1.1",
           "MarcTron.Admob": "1.5.8",
           "PCLStorage": "1.0.2",
+          "Plugin.FirebasePushNotification": "3.3.10",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1534",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1609,6 +1885,32 @@
         "lib/wp8/PCLStorage.xml",
         "pclstorage.1.0.2.nupkg.sha512",
         "pclstorage.nuspec"
+      ]
+    },
+    "Plugin.FirebasePushNotification/3.3.10": {
+      "sha512": "m2RokQa7jCSi0SVcz42AZk4btTGJneg0l56FfwgFswQ38Xkqj4OqCRr68y9lmh6y/tjdWKKkwYZK84YsVtRa0g==",
+      "type": "package",
+      "path": "plugin.firebasepushnotification/3.3.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.dll",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.pdb",
+        "lib/monoandroid10.0/Plugin.FirebasePushNotification.xml",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.dll",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.pdb",
+        "lib/monoandroid90/Plugin.FirebasePushNotification.xml",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.dll",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.pdb",
+        "lib/netstandard2.0/Plugin.FirebasePushNotification.xml",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.dll",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.pdb",
+        "lib/xamarinios10/Plugin.FirebasePushNotification.xml",
+        "plugin.firebasepushnotification.3.3.10.nupkg.sha512",
+        "plugin.firebasepushnotification.nuspec",
+        "readme.txt"
       ]
     },
     "SkiaSharp/1.68.1.1": {
@@ -1918,6 +2220,21 @@
         "xamarin.essentials.nuspec"
       ]
     },
+    "Xamarin.Firebase.iOS.CloudMessaging/4.3.0": {
+      "sha512": "VzZ62Sn+TwKbAsKtTPYUibT8fwJ417ux0HKWFbk9g9ty1burq0B/BENR2RxSvViAJ0WcTwyhl7iTfiD8AOm66A==",
+      "type": "package",
+      "path": "xamarin.firebase.ios.cloudmessaging/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "firebaseioscloudmessaging_128x128.png",
+        "lib/xamarinios10/Firebase.CloudMessaging.dll",
+        "xamarin.firebase.ios.cloudmessaging.4.3.0.nupkg.sha512",
+        "xamarin.firebase.ios.cloudmessaging.nuspec"
+      ]
+    },
     "Xamarin.Firebase.iOS.Core/6.6.6": {
       "sha512": "GM43jhKOjzs2AwTNxPA3OFW/UVAM7oBWfYn0m9c56oOAAlPdpO7LebWXkLNa/vcFv9gtfCBrVVl+QIk8miwTDw==",
       "type": "package",
@@ -1935,10 +2252,40 @@
         "xamarin.firebase.ios.core.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1451": {
-      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
+    "Xamarin.Firebase.iOS.Installations/1.1.1": {
+      "sha512": "Q9u1Sw/YFJYOaRGzYxRDaWLUwsmRZkD2d8qQcvEfYx9P3WcFz5jPl38XlnZrTOwUjOdmq6ckWXJvygK7W3ZahQ==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1451",
+      "path": "xamarin.firebase.ios.installations/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "firebaseiosinstallations_128x128.png",
+        "lib/xamarinios10/Firebase.Installations.dll",
+        "xamarin.firebase.ios.installations.1.1.1.nupkg.sha512",
+        "xamarin.firebase.ios.installations.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.iOS.InstanceID/4.3.3": {
+      "sha512": "w3kUFKzpSkpQTgG3F+SJRfE1jSFxmPN2oQqECSTND+r892Q3FBRCrbZizWZ6mPElENvH3Js9HFve7Cod27fGAg==",
+      "type": "package",
+      "path": "xamarin.firebase.ios.instanceid/4.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "firebaseiosinstanceid_128x128.png",
+        "lib/xamarinios10/Firebase.InstanceID.dll",
+        "xamarin.firebase.ios.instanceid.4.3.3.nupkg.sha512",
+        "xamarin.firebase.ios.instanceid.nuspec"
+      ]
+    },
+    "Xamarin.Forms/4.8.0.1534": {
+      "sha512": "h5S4nWRBYUNgbs2FtxkSLISh2FUBdLGZ0yVR0KP8utNMTOiRUhWcLzuJf3w4NYtboWFFUx/dyqZpi+aCcIMvSg==",
+      "type": "package",
+      "path": "xamarin.forms/4.8.0.1534",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2247,14 +2594,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.4.8.0.1534.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Visual.Material/4.8.0.1451": {
-      "sha512": "QLei1etT+z8jpYOnkSlt4JiCyjSoXImVEc7sE0X33lYTOScaiECbNk2EyZ5fP7EkiB2IFYvVHRVR1rNnBL+e1g==",
+    "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "sha512": "2wuSSV4eFquKYmkCdQwZJgd+Z31+0A/JugzuX4IbdMNi8TpCkf5slNfwPQlrefi+wWNh919KeCyX9T7eqR7H2Q==",
       "type": "package",
-      "path": "xamarin.forms.visual.material/4.8.0.1451",
+      "path": "xamarin.forms.visual.material/4.8.0.1534",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2271,7 +2618,7 @@
         "lib/netstandard1.0/_._",
         "lib/tizen40/Xamarin.Forms.Material.dll",
         "lib/tizen40/Xamarin.Forms.Material.pdb",
-        "xamarin.forms.visual.material.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.visual.material.4.8.0.1534.nupkg.sha512",
         "xamarin.forms.visual.material.nuspec"
       ]
     },
@@ -2315,9 +2662,10 @@
     "Xamarin.iOS,Version=v1.0": [
       "LittleVictories >= 1.0.0",
       "MagicGradients >= 1.1.1",
+      "Plugin.FirebasePushNotification >= 3.3.10",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451",
-      "Xamarin.Forms.Visual.Material >= 4.8.0.1451"
+      "Xamarin.Forms >= 4.8.0.1534",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1534"
     ]
   },
   "packageFolders": {
@@ -2366,17 +2714,21 @@
             "target": "Package",
             "version": "[1.1.1, )"
           },
+          "Plugin.FirebasePushNotification": {
+            "target": "Package",
+            "version": "[3.3.10, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1534, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1534, )"
           }
         }
       }

@@ -26,17 +26,24 @@ namespace LittleVictories.Data
         {
             return _database.Table<TheVictory>().OrderByDescending(x => x.Date).ToListAsync();
         }
-
+        public Task<List<Preferences>> GetPreferencesAsync()
+        {
+            return _database.Table<Preferences>().ToListAsync();
+        }
+        public bool IsPreferenceDisabled(string name)
+        {
+            var query = _database.QueryAsync<Preferences>(
+                "select IsDisabled from Preferences where PreferenceName = ", name);
+            return query != null;
+        }
         public Task<int> SaveVictoryAsync(TheVictory victory)
         {
             return victory.Id != 0 ? _database.UpdateAsync(victory) : _database.InsertAsync(victory);
         }
-
         public Task<int> DeleteVictoryAsync(TheVictory victory)
         {
             return _database.DeleteAsync(victory);
         }
-
         public Task<int> SaveQuickVictoryAsync (QuickVictories quickVictories)
         {
             return quickVictories.Id != 0 ? _database.UpdateAsync(quickVictories) : _database.InsertAsync(quickVictories);

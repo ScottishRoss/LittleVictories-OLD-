@@ -19,5 +19,11 @@ namespace LittleVictories
             {
             });
         }
+        async void OnTestNotificationClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TestNotification()
+            {
+            });
+        }
     }
 }

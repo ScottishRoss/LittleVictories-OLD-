@@ -22,4 +22,14 @@ namespace LittleVictories.Models
         [AutoIncrement]
         public int DisplaySeq { get; set; }
     }
+
+    public class Preferences
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        [MaxLength(140)]
+        public string Name { get; set; }
+        [AutoIncrement]
+        public int IsDisabled { get; set; }
+    }
 }

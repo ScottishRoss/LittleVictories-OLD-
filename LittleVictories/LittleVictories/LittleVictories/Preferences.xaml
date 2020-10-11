@@ -20,6 +20,12 @@
                     Clicked="OnQuickVictoriesClicked" 
                     VerticalOptions="StartAndExpand"/>
 
+            <Button Text="Test Notification"
+                    x:Name="tnButton" 
+                    Style="{StaticResource BtnPrimary}"
+                    Clicked="OnTestNotificationClicked" 
+                    VerticalOptions="StartAndExpand"/>
+
             <controls:MTAdView x:Name="myAds" 
                                IsVisible="true" 
                                VerticalOptions="EndAndExpand" 

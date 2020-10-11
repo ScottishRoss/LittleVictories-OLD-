@@ -4,9 +4,12 @@ using Android.Gms.Ads;
 using Android.OS;
 using Android.Runtime;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using Android.Content;
+using LittleVictories.Interfaces;
+using LocalNotifications.Droid;
+using Xamarin.Forms;
 using Environment = System.Environment;
 
 namespace LittleVictories.Droid
@@ -33,11 +36,25 @@ namespace LittleVictories.Droid
     
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7100257291492276~4761790441");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
+            Forms.Init(this, savedInstanceState);
+            FormsMaterial.Init(this, savedInstanceState);
             LoadApplication(new App());
+            CreateNotificationFromIntent(Intent);
+        }
+        protected override void OnNewIntent(Intent intent)
+        {
+            CreateNotificationFromIntent(intent);
         }
 
+        void CreateNotificationFromIntent(Intent intent)
+        {
+            if (intent?.Extras != null)
+            {
+                var title = intent.Extras.GetString(AndroidNotificationManager.TitleKey);
+                var message = intent.Extras.GetString(AndroidNotificationManager.MessageKey);
+                DependencyService.Get<INotificationManager>().ReceiveNotification(title, message);
+            }
+        }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
