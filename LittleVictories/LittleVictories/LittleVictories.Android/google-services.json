@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33556680240",
+    "firebase_url": "https://little-victories-b2c60.firebaseio.com",
+    "project_id": "little-victories-b2c60",
+    "storage_bucket": "little-victories-b2c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33556680240:android:d987ef70e18a950382e7f5",
+        "android_client_info": {
+          "package_name": "rphenderson.dev.littlevictories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33556680240-vqba7fo48tq0rdgr08rd95jekinceod2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXs7qBwEGIOs98mCBvRu3k7jJM1llFtdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33556680240-vqba7fo48tq0rdgr08rd95jekinceod2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

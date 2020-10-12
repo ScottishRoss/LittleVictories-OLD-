@@ -104,7 +104,7 @@
     <AndroidAsset Include="..\LittleVictories\Data\LittleVictories.db3">
       <Link>Assets\LittleVictories.db3</Link>
     </AndroidAsset>
-    <GoogleServicesJson Include="google-services.json" />
+    <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -205,7 +205,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionLittleVictoriesAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionLittleVictoriesAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadUnhandledDeviceExceptionLittleVictoriesAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionLittleVictoriesAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
