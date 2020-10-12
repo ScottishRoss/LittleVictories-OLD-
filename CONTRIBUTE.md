@@ -16,6 +16,7 @@ If you want to contribute to Little Victories source code:
   * Clone the repository and make your changes.
     Typically, improvements are made to the master branch, unless your fix is
     specific for a particular version.
+  ** Master is currently the non-stable version that will have a lot of unrefined work against it. Cloning Release is likely to be a safer method.
   * Please take care of the code formatting. I won't outright reject pull 
     requests due to a different coding style, but it would be nice if the 
     source code was consistent. 
