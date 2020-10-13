@@ -34,7 +34,7 @@
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Editor x:Name="title" 
                                     VerticalOptions="FillAndExpand"
-                                    HeightRequest="50"
+                                    HeightRequest="75"
                                     Placeholder="Give your Victory a title."
                                     FontFamily="{StaticResource MontSerrat}"
                                     MaxLength="34"/>

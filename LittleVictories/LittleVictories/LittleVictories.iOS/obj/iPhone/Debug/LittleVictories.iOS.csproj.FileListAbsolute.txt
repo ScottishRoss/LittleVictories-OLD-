@@ -57,7 +57,10 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Google.MobileAds.dll
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\MaterialComponents.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\LittleVictories.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.dll
