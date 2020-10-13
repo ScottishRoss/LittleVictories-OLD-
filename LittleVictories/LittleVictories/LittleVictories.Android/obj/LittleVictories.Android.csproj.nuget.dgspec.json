@@ -48,7 +48,7 @@
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.8, )"
+              "version": "[1.5.7, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -56,11 +56,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
-            },
-            "Xamarin.Forms.Visual.Material": {
-              "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1269, )"
             }
           }
         }
@@ -110,7 +106,7 @@
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.8, )"
+              "version": "[1.5.7, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -128,11 +124,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
-            },
-            "Xamarin.Forms.Visual.Material": {
-              "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1269, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

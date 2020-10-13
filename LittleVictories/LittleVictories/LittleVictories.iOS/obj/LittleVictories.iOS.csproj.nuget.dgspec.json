@@ -52,11 +52,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
-            },
-            "Xamarin.Forms.Visual.Material": {
-              "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1269, )"
             }
           }
         }

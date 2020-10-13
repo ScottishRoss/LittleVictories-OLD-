@@ -76,6 +76,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\optimized\
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csprojAssemblyReference.cache
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CoreCompileInputs.cache
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CopyComplete
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.exe
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.pdb
