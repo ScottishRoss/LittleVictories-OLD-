@@ -21,3 +21,4 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\ref\LittleVictories.dll
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.pdb
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories\obj\Debug\netstandard2.0\LittleVictories.csprojAssemblyReference.cache
