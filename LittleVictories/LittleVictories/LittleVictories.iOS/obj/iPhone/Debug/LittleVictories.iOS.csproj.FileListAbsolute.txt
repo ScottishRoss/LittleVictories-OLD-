@@ -73,14 +73,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\optimized\
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csprojAssemblyReference.cache
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CoreCompileInputs.cache
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CopyComplete
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.exe
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Plugin.FirebasePushNotification.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Plugin.FirebasePushNotification.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Firebase.CloudMessaging.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Firebase.Installations.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Firebase.InstanceID.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.dll
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\MaterialComponents.dll
