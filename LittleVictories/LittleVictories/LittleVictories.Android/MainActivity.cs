@@ -27,9 +27,16 @@ namespace LittleVictories.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
     
+            // Initialise Ads
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7100257291492276~4761790441");
+
+            // Initialize Forms
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            // Initialize Material theme
+            Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
@@ -42,8 +49,8 @@ namespace LittleVictories.Droid
         {
             public static string GetLocalFilePath(string filename)
             {
-                string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-                string dbPath = Path.Combine(path, filename);
+                var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                var dbPath = Path.Combine(path, filename);
 
                 CopyDatabaseIfNotExists(dbPath);
 
