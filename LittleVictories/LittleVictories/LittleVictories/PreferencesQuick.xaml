@@ -24,7 +24,7 @@
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
-                   Margin="43,0"
+                   Margin="43,30"
                    FontFamily="{StaticResource MontSerrat}"
                    FontSize="Title"
                    HorizontalTextAlignment="Center">Oh no! It seems there are no Quick Victories in here. You can add one by clicking "Add Quick Victory" below.</Label>
