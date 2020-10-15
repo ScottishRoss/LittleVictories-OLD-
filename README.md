@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ScottishRoss/LittleVictories">
-    <img src="https://github.com/ScottishRoss/LittleVictories/blob/master/Images/LV%20Big.png?raw=true" alt="Logo" width="500" height="250">
+    <img src="https://github.com/ScottishRoss/LittleVictories/blob/Release/Images/LV%20Big.png?raw=true" alt="Logo" width="500" height="250">
   </a>
 
   <p align="center">
@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Little Victories Screenshot](https://github.com/ScottishRoss/LittleVictories/blob/master/Images/full.png?raw=true)
+![Little Victories Screenshot](https://github.com/ScottishRoss/LittleVictories/blob/Release/Images/full.png)
 
 Everyday life is full of Little Victories, the small steps that we don't always celebrate as we should. We look to the big wins and we judge ourselves by achieving milestones, rather than congratulating ourselves for small moments of progress towards our goals.
 
