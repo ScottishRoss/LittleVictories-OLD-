@@ -24,16 +24,18 @@ namespace LittleVictories
             if (quickPicker.SelectedItem == null)
             {
                 quickVictory = "N/A";
-            } else
+            } 
+            else
             {
                 var selectedQuickVictory = quickPicker.SelectedItem as QuickVictories;
                 quickVictory = selectedQuickVictory.Desc;
             }
 
-            var victoryTitle = CapitalizeFirstLetterOfString(title.Text) ?? quickVictory ?? "No title";
-            var victoryDetails = CapitalizeFirstLetterOfString(details.Text) ?? "No details were entered.";
+            var victoryDetails = details.Text ?? "No details were entered.";
 
-            var victory = new TheVictory()
+            var victoryTitle = CapitalizeFirstLetterOfString(title.Text) ?? quickVictory ?? "No title";
+
+                var victory = new TheVictory()
             {
                 Title = victoryTitle,
                 Quick = quickVictory,
@@ -45,7 +47,7 @@ namespace LittleVictories
 
             await DisplayAlert(
                 "You have just celebrated a Victory!",
-                "Your Victory has been saved for future celebrations.",
+                "Your Victory has been saved for future celebration.",
                 "Woohoo!"
             );
 
@@ -54,7 +56,7 @@ namespace LittleVictories
 
         public string CapitalizeFirstLetterOfString(string String)
         {
-            if (String.Length == 1)
+            if (!String.IsNullOrEmpty(String) && String.Length == 1)
                 String = char.ToUpper(String[0]).ToString();
             else
                 String = char.ToUpper(String[0]) + String.Substring(1);
