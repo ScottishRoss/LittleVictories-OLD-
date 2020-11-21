@@ -41,34 +41,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="AddVictory.xaml.cs">
+    <Compile Update="Views\AddVictory.xaml.cs">
       <DependentUpon>AddVictory.xaml</DependentUpon>
     </Compile>
-    <Compile Update="HomePage.xaml.cs">
+    <Compile Update="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddVictory.xaml">
+    <EmbeddedResource Update="Views\AddVictory.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="HomePage.xaml">
+    <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Preferences.xaml">
+    <EmbeddedResource Update="Views\Preferences.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PreferencesQuick.xaml">
+    <EmbeddedResource Update="Views\PreferencesQuick.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="SplashPage.xaml">
+    <EmbeddedResource Update="Views\SplashPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ViewVictory.xaml">
+    <EmbeddedResource Update="Views\ViewVictory.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="YourVictories.xaml">
+    <EmbeddedResource Update="Views\YourVictories.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
