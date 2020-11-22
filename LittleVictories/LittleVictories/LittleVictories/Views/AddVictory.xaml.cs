@@ -1,7 +1,7 @@
-﻿using LittleVictories.Models;
-using System;
+﻿using System;
+using LittleVictories.Models;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
     public partial class AddVictory
     {
