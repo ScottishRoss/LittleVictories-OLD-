@@ -1,20 +1,14 @@
-﻿using LittleVictories.Models;
-using System;
-using Xamarin.Forms;
+﻿using System;
+using LittleVictories.Models;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
-    public partial class HomePage : ContentPage
+    public partial class HomePage
     {
         public HomePage()
         {
             InitializeComponent();
         }
-
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-        } 
 
         async void OnVictoryAddClicked(object sender, EventArgs e)
         {

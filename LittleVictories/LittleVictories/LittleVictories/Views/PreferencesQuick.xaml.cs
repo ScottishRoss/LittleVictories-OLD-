@@ -1,13 +1,13 @@
-﻿using LittleVictories.Models;
+﻿using System;
+using System.Collections.Generic;
+using LittleVictories.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Collections.Generic;
-using System.Globalization;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PreferencesQuick : ContentPage
+    public partial class PreferencesQuick
     {
         public PreferencesQuick()
         {
@@ -38,9 +38,9 @@ namespace LittleVictories
                 BindingContext = e.SelectedItem as QuickVictories;
 
                 bool answer = await DisplayAlert(
-                    "Delete Confirmation",
+                    "Are you sure you want to delete?",
                         "Are you sure you want to delete this Quick Victory?",
-                        "Yes",
+                        "Delete",
                         "No"
                     );
 
@@ -49,36 +49,48 @@ namespace LittleVictories
                     var quickVictory = (QuickVictories)BindingContext;
 
                     await App.Database.DeleteQuickVictoryAsync(quickVictory);
-                    await Navigation.PushAsync(new PreferencesQuick()
-                    {
-                    });
+                    await Navigation.PushAsync(new PreferencesQuick());
                 };
 
             }
         }
 
-        async void OnAddQuickVictoryClicked(object sender, System.EventArgs e)
+        async void OnAddQuickVictoryClicked(object sender, EventArgs e)
         {
-            string desc = await DisplayPromptAsync("Add Quick Victory", "Enter the Quick Victory here.");
-            TextInfo textInfo = new CultureInfo("en-GB", false).TextInfo;
+            string desc = await DisplayPromptAsync("Add Quick Victory", "What's the name of the Quick Victory?", "Save", "Cancel");
 
             if (string.IsNullOrWhiteSpace(desc))
             {
-                await DisplayAlert("Error", "Please enter a value.", "Ok");
+                await DisplayAlert("Please enter a value", "We didn't catch that :(", "Okay");
             }
             else
             {
-                var quickVictory = new QuickVictories()
+                var quickVictory = new QuickVictories
                 {
-                    Desc = textInfo.ToTitleCase(desc)
+                    Desc = CapitalizeFirstLetterOfString(desc)
                 };
 
                 await App.Database.SaveQuickVictoryAsync(quickVictory);
 
-                await Navigation.PushAsync(new PreferencesQuick()
-                {
-                });
+                await Navigation.PushAsync(new PreferencesQuick());
             }
+        }
+
+        private string CapitalizeFirstLetterOfString(string String)
+        {
+            if (!String.IsNullOrEmpty(String))
+            {
+                if (String.Length == 1)
+                {
+                    String = char.ToUpper(String[0]).ToString();
+                }
+                else
+                {
+                    String = char.ToUpper(String[0]) + String.Substring(1);
+                }
+            }
+
+            return String;
         }
     }
 }

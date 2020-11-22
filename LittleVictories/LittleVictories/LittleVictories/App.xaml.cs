@@ -2,11 +2,12 @@
 using PCLStorage;
 using System;
 using System.IO;
+using LittleVictories.Views;
 using Xamarin.Forms;
 
 namespace LittleVictories
 {
-    public partial class App : Application
+    public partial class App
     {
         static LittleVictoriesDatabase database;
 
@@ -22,7 +23,7 @@ namespace LittleVictories
                         var sqliteFilename = "LittleVictories.db3";
 
                         IFolder folder = FileSystem.Current.LocalStorage;
-                        string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
+                        string path = PortablePath.Combine(folder.Path, sqliteFilename);
                         database = new LittleVictoriesDatabase(Path.Combine(path));
                     }
                 return database;
@@ -33,7 +34,7 @@ namespace LittleVictories
                     var sqliteFilename = "LittleVictories.db3";
 
                     IFolder folder = FileSystem.Current.LocalStorage;
-                    string path = PortablePath.Combine(folder.Path.ToString(), sqliteFilename);
+                    string path = PortablePath.Combine(folder.Path, sqliteFilename);
                     Directory.CreateDirectory(path);
                     database = new LittleVictoriesDatabase(Path.Combine(path));
                 }

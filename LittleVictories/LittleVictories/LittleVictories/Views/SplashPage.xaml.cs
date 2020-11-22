@@ -2,10 +2,10 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SplashPage : ContentPage
+    public partial class SplashPage
     {
         public SplashPage()
         {

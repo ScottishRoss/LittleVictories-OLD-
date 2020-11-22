@@ -1,10 +1,10 @@
-﻿using LittleVictories.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using LittleVictories.Models;
 using Xamarin.Forms;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
-    public partial class YourVictories : ContentPage
+    public partial class YourVictories
     {
         public YourVictories()
         {
