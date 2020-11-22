@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "MagicGradients/1.1.1": {
+      "MagicGradients/1.2.0": {
         "type": "package",
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
@@ -15,12 +15,12 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.8": {
+      "MarcTron.Admob/1.6.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "4.2.0.815419",
-          "Xamarin.Google.iOS.MobileAds": "7.57.0"
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.MtAdmob.dll": {}
@@ -199,7 +199,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -217,7 +217,7 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1534": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -338,7 +338,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1687": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -350,11 +350,11 @@
           "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.57.0": {
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.6.6"
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -382,12 +382,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MagicGradients": "1.1.1",
-          "MarcTron.Admob": "1.5.8",
+          "MagicGradients": "1.2.0",
+          "MarcTron.Admob": "1.6.0",
           "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1534",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1687",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -399,7 +399,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "MagicGradients/1.1.1": {
+      "MagicGradients/1.2.0": {
         "type": "package",
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
@@ -412,12 +412,12 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.8": {
+      "MarcTron.Admob/1.6.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "4.2.0.815419",
-          "Xamarin.Google.iOS.MobileAds": "7.57.0"
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.MtAdmob.dll": {}
@@ -574,7 +574,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -592,7 +592,7 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1534": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -713,7 +713,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1687": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -725,11 +725,11 @@
           "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.57.0": {
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.6.6"
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -757,12 +757,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MagicGradients": "1.1.1",
-          "MarcTron.Admob": "1.5.8",
+          "MagicGradients": "1.2.0",
+          "MarcTron.Admob": "1.6.0",
           "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1534",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1687",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -774,7 +774,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "MagicGradients/1.1.1": {
+      "MagicGradients/1.2.0": {
         "type": "package",
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
@@ -787,12 +787,12 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.8": {
+      "MarcTron.Admob/1.6.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "4.2.0.815419",
-          "Xamarin.Google.iOS.MobileAds": "7.57.0"
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.MtAdmob.dll": {}
@@ -952,7 +952,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -970,7 +970,7 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1534": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1091,7 +1091,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1687": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -1103,11 +1103,11 @@
           "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.57.0": {
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.6.6"
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -1135,12 +1135,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MagicGradients": "1.1.1",
-          "MarcTron.Admob": "1.5.8",
+          "MagicGradients": "1.2.0",
+          "MarcTron.Admob": "1.6.0",
           "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1534",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1687",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1152,7 +1152,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "MagicGradients/1.1.1": {
+      "MagicGradients/1.2.0": {
         "type": "package",
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
@@ -1165,12 +1165,12 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.8": {
+      "MarcTron.Admob/1.6.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "4.2.0.815419",
-          "Xamarin.Google.iOS.MobileAds": "7.57.0"
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.MtAdmob.dll": {}
@@ -1330,7 +1330,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -1348,7 +1348,7 @@
           "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1534": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -1469,7 +1469,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1687": {
         "type": "package",
         "dependencies": {
           "Xamarin.iOS.MaterialComponents": "92.0.0"
@@ -1481,11 +1481,11 @@
           "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.57.0": {
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.6.6"
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -1513,12 +1513,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MagicGradients": "1.1.1",
-          "MarcTron.Admob": "1.5.8",
+          "MagicGradients": "1.2.0",
+          "MarcTron.Admob": "1.6.0",
           "PCLStorage": "1.0.2",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1534",
-          "Xamarin.Forms.Visual.Material": "4.8.0.1534",
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1687",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1531,24 +1531,24 @@
     }
   },
   "libraries": {
-    "MagicGradients/1.1.1": {
-      "sha512": "KxDIaqR19GE0kynUyRyrmDEabvLUoj2tlz+QSuStVltJxnrGBB8/83Y5bH5zEyDoPcBbF8qGlPTpZztS5iHCWA==",
+    "MagicGradients/1.2.0": {
+      "sha512": "kFTa1bd7qHbBlnYNmLNpxw5Q8NoJPdIGRwL/vVUUYlUPg+j12Nt3a9zjYJkes4H/XlhsPAnxeRSKiaF8s3SRkA==",
       "type": "package",
-      "path": "magicgradients/1.1.1",
+      "path": "magicgradients/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
         "lib/netstandard2.0/MagicGradients.dll",
-        "magicgradients.1.1.1.nupkg.sha512",
+        "magicgradients.1.2.0.nupkg.sha512",
         "magicgradients.nuspec"
       ]
     },
-    "MarcTron.Admob/1.5.8": {
-      "sha512": "+umL/J+BYSuX72GpSIF43iS0YeqdbVm7eQ0NikGdjyovkwu/ZmceXKC6HsmfSkZPFbDIPWYhSoLEBAdkHtt1Tw==",
+    "MarcTron.Admob/1.6.0": {
+      "sha512": "TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
       "type": "package",
-      "path": "marctron.admob/1.5.8",
+      "path": "marctron.admob/1.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1559,7 +1559,7 @@
         "lib/uap10.0.18362/Plugin.MtAdmob.dll",
         "lib/uap10.0.18362/Plugin.MtAdmob.pri",
         "lib/xamarinios10/Plugin.MtAdmob.dll",
-        "marctron.admob.1.5.8.nupkg.sha512",
+        "marctron.admob.1.6.0.nupkg.sha512",
         "marctron.admob.nuspec",
         "readme.txt"
       ]
@@ -1918,10 +1918,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Firebase.iOS.Core/6.6.6": {
-      "sha512": "GM43jhKOjzs2AwTNxPA3OFW/UVAM7oBWfYn0m9c56oOAAlPdpO7LebWXkLNa/vcFv9gtfCBrVVl+QIk8miwTDw==",
+    "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "sha512": "b/cy0xmGUGlT/RxQt2mvlB9lL/tiNRcfsZsWH20lP7FI6H/xABAGAQU0MDKM84KTTOx8NN9CB95eY74NWKGQtw==",
       "type": "package",
-      "path": "xamarin.firebase.ios.core/6.6.6",
+      "path": "xamarin.firebase.ios.core/6.10.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1931,14 +1931,14 @@
         "buildTransitive/Xamarin.Firebase.iOS.Core.targets",
         "firebaseioscore_128x128.png",
         "lib/xamarinios10/Firebase.Core.dll",
-        "xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
+        "xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
         "xamarin.firebase.ios.core.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1534": {
-      "sha512": "h5S4nWRBYUNgbs2FtxkSLISh2FUBdLGZ0yVR0KP8utNMTOiRUhWcLzuJf3w4NYtboWFFUx/dyqZpi+aCcIMvSg==",
+    "Xamarin.Forms/4.8.0.1687": {
+      "sha512": "o9ACAbleXxorZzIHRBzIloPollwVC7+YTfxE8r3L2frArCHUkrHIy+K+azQag/Un4h2u88DS01HqR16/lMD8zQ==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1534",
+      "path": "xamarin.forms/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2247,14 +2247,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1534.nupkg.sha512",
+        "xamarin.forms.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Visual.Material/4.8.0.1534": {
-      "sha512": "2wuSSV4eFquKYmkCdQwZJgd+Z31+0A/JugzuX4IbdMNi8TpCkf5slNfwPQlrefi+wWNh919KeCyX9T7eqR7H2Q==",
+    "Xamarin.Forms.Visual.Material/4.8.0.1687": {
+      "sha512": "VsOqEG6Ii1boEKg3A/PCjY3jLGWzazJbFfqJj9xcwIhTjOyQTbXyvymg6m3BH2Td6vW2yOGUuYIDqCl9jFKpSA==",
       "type": "package",
-      "path": "xamarin.forms.visual.material/4.8.0.1534",
+      "path": "xamarin.forms.visual.material/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2271,14 +2271,14 @@
         "lib/netstandard1.0/_._",
         "lib/tizen40/Xamarin.Forms.Material.dll",
         "lib/tizen40/Xamarin.Forms.Material.pdb",
-        "xamarin.forms.visual.material.4.8.0.1534.nupkg.sha512",
+        "xamarin.forms.visual.material.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.visual.material.nuspec"
       ]
     },
-    "Xamarin.Google.iOS.MobileAds/7.57.0": {
-      "sha512": "e9hQr0/i8gy+wO4VssaQoIN8L5lgkN3UVzpN+NilgxhFZRbZncCaYyFW2NTvvb7r0QzTix4dZRhnSvBP3r8x5Q==",
+    "Xamarin.Google.iOS.MobileAds/7.66.0": {
+      "sha512": "e1SprUq3RNhNXyV2UCGI/2dte3nRcLDpXR/jlJj6h1OM+LVpGak/WzJp2yTQ7j1tgj8YDMrFAbYMtFVoLU7VKQ==",
       "type": "package",
-      "path": "xamarin.google.ios.mobileads/7.57.0",
+      "path": "xamarin.google.ios.mobileads/7.66.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2288,7 +2288,7 @@
         "buildTransitive/Xamarin.Google.iOS.MobileAds.targets",
         "googleiosmobileads_128x128.png",
         "lib/xamarinios10/Google.MobileAds.dll",
-        "xamarin.google.ios.mobileads.7.57.0.nupkg.sha512",
+        "xamarin.google.ios.mobileads.7.66.0.nupkg.sha512",
         "xamarin.google.ios.mobileads.nuspec"
       ]
     },
@@ -2314,10 +2314,10 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "LittleVictories >= 1.0.0",
-      "MagicGradients >= 1.1.1",
+      "MagicGradients >= 1.2.0",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1534",
-      "Xamarin.Forms.Visual.Material >= 4.8.0.1534"
+      "Xamarin.Forms >= 4.8.0.1687",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1687"
     ]
   },
   "packageFolders": {
@@ -2364,7 +2364,7 @@
         "dependencies": {
           "MagicGradients": {
             "target": "Package",
-            "version": "[1.1.1, )"
+            "version": "[1.2.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -2372,11 +2372,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1534, )"
+            "version": "[4.8.0.1687, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",
-            "version": "[4.8.0.1534, )"
+            "version": "[4.8.0.1687, )"
           }
         }
       }

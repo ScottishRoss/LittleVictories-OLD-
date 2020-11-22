@@ -1,22 +1,13 @@
-﻿using LittleVictories.Models;
-using System;
-using Xamarin.Forms;
+﻿using System;
+using LittleVictories.Models;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
-    public partial class ViewVictory : ContentPage
+    public partial class ViewVictory
     {
         public ViewVictory()
         {
             InitializeComponent();
-        }
-
-        async void OnEditButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddVictory()
-            {
-                BindingContext = new TheVictory()
-            });
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)

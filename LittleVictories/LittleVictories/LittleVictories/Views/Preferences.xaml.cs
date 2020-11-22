@@ -1,12 +1,10 @@
-﻿
-using System;
-using Xamarin.Forms;
+﻿using System;
 using Xamarin.Forms.Xaml;
 
-namespace LittleVictories
+namespace LittleVictories.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Preferences : ContentPage
+    public partial class Preferences
     {
         public Preferences()
         {
@@ -15,9 +13,7 @@ namespace LittleVictories
 
         async void OnQuickVictoriesClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PreferencesQuick()
-            {
-            });
+            await Navigation.PushAsync(new PreferencesQuick());
         }
     }
 }

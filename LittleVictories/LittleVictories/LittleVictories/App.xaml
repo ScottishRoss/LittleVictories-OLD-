@@ -9,8 +9,7 @@
         <ResourceDictionary>
             <OnPlatform x:TypeArguments="x:String" x:Key="MontSerrat">
                 <On Platform="Android" Value="Montserrat-Regular.ttf#MontSerrat" />
-                <On Platform="UWP" Value="/Assets/Montserrat-Regular.ttf" />
-                <On Platform="iOS" Value="Montserrat" />
+                <On Platform="iOS" Value="Montserrat-Regular" />
             </OnPlatform>
 
             <!-- Main Colours -->
@@ -36,7 +35,6 @@
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="PlaceholderColor" Value="White"/>
                 <Setter Property="FontSize" Value="Subtitle"/>
-                <Setter Property="Visual" Value="Material"/>
             </Style>
 
             <!-- Button Styling for Home Page-->
@@ -47,7 +45,7 @@
                 <Setter Property="FontFamily" Value="{StaticResource MontSerrat}" />
                 <Setter Property="FontSize">
                     <Setter.Value>
-                        <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40"/>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="23" Tablet="40"/>
                     </Setter.Value>
                 </Setter>
                 <Setter Property="Margin" Value="20,10" />

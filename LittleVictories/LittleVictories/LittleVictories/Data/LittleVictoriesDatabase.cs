@@ -33,10 +33,8 @@ namespace LittleVictories.Data
             {
                 return _database.UpdateAsync(victory);
             }
-            else
-            {
-                return _database.InsertAsync(victory);
-            }
+
+            return _database.InsertAsync(victory);
         }
 
         public Task<int> DeleteVictoryAsync(TheVictory victory)
@@ -50,10 +48,8 @@ namespace LittleVictories.Data
             {
                 return _database.UpdateAsync(quickVictories);
             }
-            else
-            {
-                return _database.InsertAsync(quickVictories);
-            }
+
+            return _database.InsertAsync(quickVictories);
         }
         public Task<int> DeleteQuickVictoryAsync(QuickVictories quickVictories)
         {

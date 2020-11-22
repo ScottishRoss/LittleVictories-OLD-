@@ -4,7 +4,7 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
-    x:Class="LittleVictories.ViewVictory"
+    x:Class="LittleVictories.Views.ViewVictory"
     Title="Celebrate a Victory"
     ControlTemplate="{StaticResource PageWithGradient}">
 
@@ -77,8 +77,8 @@
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Label FontSize="Large"
                                    FontFamily="{StaticResource MontSerrat}"
-                                   Text="{Binding Date}">
-                                
+                                   Text="{Binding Date, StringFormat='{0:dd MMMM yyyy - HH:mm}'}">
+
                             </Label>
                         </StackLayout>
                     </ViewCell>

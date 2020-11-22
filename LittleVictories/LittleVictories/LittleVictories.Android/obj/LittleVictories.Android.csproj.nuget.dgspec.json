@@ -44,11 +44,11 @@
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[1.2.0, )"
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.8, )"
+              "version": "[1.6.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -56,11 +56,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1687, )"
             },
             "Xamarin.Forms.Visual.Material": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1687, )"
             }
           }
         }
@@ -92,6 +92,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -103,14 +104,15 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "MagicGradients": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[1.2.0, )"
             },
             "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.5.8, )"
+              "version": "[1.6.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -128,11 +130,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1687, )"
             },
             "Xamarin.Forms.Visual.Material": {
               "target": "Package",
-              "version": "[4.8.0.1534, )"
+              "version": "[4.8.0.1687, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -149,7 +151,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
