@@ -24,9 +24,6 @@ namespace LittleVictories.Droid
             AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledException;
             TaskScheduler.UnobservedTaskException += TaskSchedulerOnUnobservedTaskException;
 
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
-    
             // Initialise Ads
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7100257291492276~4761790441");
 

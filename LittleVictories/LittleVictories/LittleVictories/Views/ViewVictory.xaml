@@ -77,8 +77,8 @@
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Label FontSize="Large"
                                    FontFamily="{StaticResource MontSerrat}"
-                                   Text="{Binding Date}">
-                                
+                                   Text="{Binding Date, StringFormat='{0:MM/dd/yyyy - HH:MM}'}">
+
                             </Label>
                         </StackLayout>
                     </ViewCell>
