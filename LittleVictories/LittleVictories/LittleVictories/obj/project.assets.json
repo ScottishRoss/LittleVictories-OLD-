@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "MagicGradients/1.1.1": {
+      "MagicGradients/1.2.0": {
         "type": "package",
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.68.1.1",
@@ -15,7 +15,7 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
-      "MarcTron.Admob/1.5.8": {
+      "MarcTron.Admob/1.6.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
@@ -493,7 +493,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1534": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -510,10 +510,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Visual.Material/4.8.0.1534": {
+      "Xamarin.Forms.Visual.Material/4.8.0.1687": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1534"
+          "Xamarin.Forms": "4.8.0.1687"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -525,24 +525,24 @@
     }
   },
   "libraries": {
-    "MagicGradients/1.1.1": {
-      "sha512": "KxDIaqR19GE0kynUyRyrmDEabvLUoj2tlz+QSuStVltJxnrGBB8/83Y5bH5zEyDoPcBbF8qGlPTpZztS5iHCWA==",
+    "MagicGradients/1.2.0": {
+      "sha512": "kFTa1bd7qHbBlnYNmLNpxw5Q8NoJPdIGRwL/vVUUYlUPg+j12Nt3a9zjYJkes4H/XlhsPAnxeRSKiaF8s3SRkA==",
       "type": "package",
-      "path": "magicgradients/1.1.1",
+      "path": "magicgradients/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
         "lib/netstandard2.0/MagicGradients.dll",
-        "magicgradients.1.1.1.nupkg.sha512",
+        "magicgradients.1.2.0.nupkg.sha512",
         "magicgradients.nuspec"
       ]
     },
-    "MarcTron.Admob/1.5.8": {
-      "sha512": "+umL/J+BYSuX72GpSIF43iS0YeqdbVm7eQ0NikGdjyovkwu/ZmceXKC6HsmfSkZPFbDIPWYhSoLEBAdkHtt1Tw==",
+    "MarcTron.Admob/1.6.0": {
+      "sha512": "TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
       "type": "package",
-      "path": "marctron.admob/1.5.8",
+      "path": "marctron.admob/1.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -553,7 +553,7 @@
         "lib/uap10.0.18362/Plugin.MtAdmob.dll",
         "lib/uap10.0.18362/Plugin.MtAdmob.pri",
         "lib/xamarinios10/Plugin.MtAdmob.dll",
-        "marctron.admob.1.5.8.nupkg.sha512",
+        "marctron.admob.1.6.0.nupkg.sha512",
         "marctron.admob.nuspec",
         "readme.txt"
       ]
@@ -2208,10 +2208,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1534": {
-      "sha512": "h5S4nWRBYUNgbs2FtxkSLISh2FUBdLGZ0yVR0KP8utNMTOiRUhWcLzuJf3w4NYtboWFFUx/dyqZpi+aCcIMvSg==",
+    "Xamarin.Forms/4.8.0.1687": {
+      "sha512": "o9ACAbleXxorZzIHRBzIloPollwVC7+YTfxE8r3L2frArCHUkrHIy+K+azQag/Un4h2u88DS01HqR16/lMD8zQ==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1534",
+      "path": "xamarin.forms/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2520,14 +2520,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1534.nupkg.sha512",
+        "xamarin.forms.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Visual.Material/4.8.0.1534": {
-      "sha512": "2wuSSV4eFquKYmkCdQwZJgd+Z31+0A/JugzuX4IbdMNi8TpCkf5slNfwPQlrefi+wWNh919KeCyX9T7eqR7H2Q==",
+    "Xamarin.Forms.Visual.Material/4.8.0.1687": {
+      "sha512": "VsOqEG6Ii1boEKg3A/PCjY3jLGWzazJbFfqJj9xcwIhTjOyQTbXyvymg6m3BH2Td6vW2yOGUuYIDqCl9jFKpSA==",
       "type": "package",
-      "path": "xamarin.forms.visual.material/4.8.0.1534",
+      "path": "xamarin.forms.visual.material/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2544,20 +2544,20 @@
         "lib/netstandard1.0/_._",
         "lib/tizen40/Xamarin.Forms.Material.dll",
         "lib/tizen40/Xamarin.Forms.Material.pdb",
-        "xamarin.forms.visual.material.4.8.0.1534.nupkg.sha512",
+        "xamarin.forms.visual.material.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.visual.material.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "MagicGradients >= 1.1.1",
-      "MarcTron.Admob >= 1.5.8",
+      "MagicGradients >= 1.2.0",
+      "MarcTron.Admob >= 1.6.0",
       "NETStandard.Library >= 2.0.3",
       "PCLStorage >= 1.0.2",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1534",
-      "Xamarin.Forms.Visual.Material >= 4.8.0.1534",
+      "Xamarin.Forms >= 4.8.0.1687",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1687",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -2607,11 +2607,11 @@
         "dependencies": {
           "MagicGradients": {
             "target": "Package",
-            "version": "[1.1.1, )"
+            "version": "[1.2.0, )"
           },
           "MarcTron.Admob": {
             "target": "Package",
-            "version": "[1.5.8, )"
+            "version": "[1.6.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -2629,11 +2629,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1534, )"
+            "version": "[4.8.0.1687, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",
-            "version": "[4.8.0.1534, )"
+            "version": "[4.8.0.1687, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
