@@ -77,7 +77,7 @@
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Label FontSize="Large"
                                    FontFamily="{StaticResource MontSerrat}"
-                                   Text="{Binding Date, StringFormat='{0:MM/dd/yyyy - HH:MM}'}">
+                                   Text="{Binding Date, StringFormat='{0:dd MMMM yyyy - HH:mm}'}">
 
                             </Label>
                         </StackLayout>

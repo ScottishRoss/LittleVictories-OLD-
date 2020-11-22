@@ -31,13 +31,13 @@
                         <ViewCell>
                             <StackLayout Orientation="Vertical" 
                                          HorizontalOptions="FillAndExpand"
-                                         Margin="20,0">
+                                         Margin="16,0">
                                 <Label Text="{Binding Title}"
                                        FontFamily="{StaticResource MontSerrat}"
                                        FontSize="Large"
                                        FontAttributes="Bold"
                                        HeightRequest="30"/>
-                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy - HH:MM}'}"
+                                <Label Text="{Binding Date, StringFormat='{0:dd MMMM yyyy - HH:mm}'}"
                                        FontFamily="{StaticResource MontSerrat}"
                                        HeightRequest="25"/>
                             </StackLayout>
