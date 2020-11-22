@@ -23,18 +23,19 @@
                        Grid.ColumnSpan="2" 
                        Intent="Form" 
                        HasUnevenRows="true"
-                       Margin="10,40">
+                       Margin="10,35">
                 <TableSection>
                     <ViewCell>
                         <StackLayout Padding="15">
                             <Label Text="Victory Title"
-                                   FontSize="Subtitle"
+                                   FontSize="Large"
                                    FontAttributes="Bold"
                                    TextColor="{StaticResource TitleFontColour}"
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Editor x:Name="title" 
                                     VerticalOptions="FillAndExpand"
                                     HeightRequest="75"
+                                    FontSize="Large"
                                     Placeholder="Give your Victory a title."
                                     FontFamily="{StaticResource MontSerrat}"
                                     MaxLength="34"/>
@@ -46,13 +47,14 @@
                     <ViewCell>
                         <StackLayout Padding="15">
                             <Label Text="Choose a Victory"
-                                   FontSize="Subtitle"
+                                   FontSize="Large"
                                    FontAttributes="Bold"
                                    TextColor="{StaticResource TitleFontColour}"
                                    FontFamily="{StaticResource MontSerrat}"/>
                             <Picker x:Name="quickPicker" 
                                     Title="- Select -"
                                     TitleColor="White"
+                                    FontSize="Large"
                                     HorizontalOptions="FillAndExpand"
                                     TextColor="#8759D7"
                                     FontFamily="{StaticResource MontSerrat}"
@@ -67,13 +69,14 @@
                     <ViewCell>
                         <StackLayout Padding="15">
                             <Label Text="Victory Details"
-                               FontSize="Subtitle"
+                               FontSize="Large"
                                FontAttributes="Bold"
                                TextColor="{StaticResource TitleFontColour}"
                                FontFamily="{StaticResource MontSerrat}"/>
                             <Editor x:Name="details" 
                                 VerticalOptions="FillAndExpand"
                                 HeightRequest="200"
+                                FontSize="Large"
                                 AutoSize="TextChanges"
                                 Placeholder="Any details about your Victory?"
                                 MaxLength="140"
@@ -92,7 +95,7 @@
                     FontSize="Large"
                     FontFamily="{StaticResource MontSerrat}"
                     TextColor="{StaticResource FontColour}" 
-                    Clicked="OnSaveButtonClicked"/>
+                    Clicked="IsTitleOrPickerEmpty"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

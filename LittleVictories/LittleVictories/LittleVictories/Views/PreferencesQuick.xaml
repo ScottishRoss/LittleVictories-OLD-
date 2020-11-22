@@ -1,7 +1,7 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             x:Class="LittleVictories.PreferencesQuick"
+             x:Class="LittleVictories.Views.PreferencesQuick"
              ios:Page.UseSafeArea="true"
              NavigationPage.HasNavigationBar="False"
              ControlTemplate="{StaticResource PageWithGradient}">
@@ -11,7 +11,7 @@
                      VerticalOptions="StartAndExpand" 
                      HorizontalOptions="StartAndExpand"
                      Margin="0,25,0,0">
-            <Label Text="Manage your Quick Victories here"
+            <Label Text="Manage Quick Victories"
                    FontSize="Title"
                    FontFamily="{StaticResource MontSerrat}"
                    TextColor="White"
@@ -19,7 +19,7 @@
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center"
                    FontAttributes="Bold"
-                   Margin="20,40,20, 0"/>
+                   Margin="10,40,10, 0"/>
 
             <Label x:Name="EmptyMessage"
                    HorizontalOptions="CenterAndExpand"
@@ -29,7 +29,7 @@
                    FontSize="Title"
                    HorizontalTextAlignment="Center">Oh no! It seems there are no Quick Victories in here. You can add one by clicking "Add Quick Victory" below.</Label>
             <ListView x:Name="QuickVictoriesListView"
-                      Margin="20,20"
+                      Margin="10,20"
                       VerticalOptions="StartAndExpand"
                       ItemSelected="OnQVListViewItemSelected">
                 <ListView.ItemTemplate>
@@ -40,10 +40,11 @@
                                          Margin="20,0">
                                 <Label Text="{Binding Desc}"
                                        FontFamily="{StaticResource MontSerrat}"
-                                       FontSize="Medium"
+                                       FontSize="Large"
                                        FontAttributes="Bold"
                                        HeightRequest="40"
-                                       HorizontalOptions="CenterAndExpand"/>
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalTextAlignment="Center"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

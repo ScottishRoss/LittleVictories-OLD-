@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.Content;
-using Android.OS;
 using AndroidX.AppCompat.App;
 using System.Threading.Tasks;
 
@@ -11,11 +10,6 @@ namespace LittleVictories.Droid
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + nameof(SplashActivity);
-
-        public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
-        {
-            base.OnCreate(savedInstanceState, persistentState);
-        }
 
         // Launches the startup task
         protected override void OnResume()

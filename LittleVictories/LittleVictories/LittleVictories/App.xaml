@@ -36,7 +36,6 @@
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="PlaceholderColor" Value="White"/>
                 <Setter Property="FontSize" Value="Subtitle"/>
-                <Setter Property="Visual" Value="Material"/>
             </Style>
 
             <!-- Button Styling for Home Page-->

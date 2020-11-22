@@ -4,7 +4,7 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
-    x:Class="LittleVictories.ViewVictory"
+    x:Class="LittleVictories.Views.ViewVictory"
     Title="Celebrate a Victory"
     ControlTemplate="{StaticResource PageWithGradient}">
 

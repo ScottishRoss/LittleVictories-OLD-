@@ -68,6 +68,7 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.pdb
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\bin\iPhone\Debug\Mono.Android.xml
+C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\build-signature\signature
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
@@ -79,4 +80,3 @@ C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\Li
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.csproj.CopyComplete
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.exe
 C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\LittleVictories.iOS.pdb
-C:\Users\rosss\Desktop\GitHub\LittleVictories\LittleVictories\LittleVictories\LittleVictories.iOS\obj\iPhone\Debug\build-signature\signature
